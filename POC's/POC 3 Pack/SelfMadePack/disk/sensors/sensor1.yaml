@@ -1,0 +1,16 @@
+---
+
+class_name: "DiskSensor"
+entry_point: "sensor1.py"
+description: "Sensor for detecting high disk space usage"
+trigger_types:
+  -
+    name: "event1"
+    description: "Triggers when logical volume almost full."
+    payload_schema:
+      type: "object"
+      properties:
+        lv_path:
+          type: "string"
+        extend:
+          type: "integer"

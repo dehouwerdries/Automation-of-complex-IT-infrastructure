@@ -1,0 +1,5 @@
+poll_interval: 5
+max_disk_percentage: 70
+logical_volume_path: "/dev/vg00/lv1"
+extend_amount: 2
+mount_point: "/newstorage"

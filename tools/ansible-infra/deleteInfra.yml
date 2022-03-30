@@ -1,0 +1,67 @@
+---
+- name: 'Delete GCP infrastructure'
+  hosts: localhost
+  gather_facts: no
+  vars:
+    service_account_file: ./servicefile.json
+    project: the-lab-automation
+    auth_kind: serviceaccount
+    zone: "europe-west1-b"
+    region: "europe-west1" 
+    machine_type: "n1-standard-1"
+    scopes: 
+      - https://www.googleapis.com/auth/compute
+      - https://www.googleapis.com/auth/sqlservice.admin
+  tasks:
+    - name: 'Delete a db'
+      google.cloud.gcp_sql_instance:
+        name: ansible-infra-db-2
+        region: "{{ region }}"
+        project: "{{ project }}"
+        auth_kind: "{{ auth_kind }}"
+        service_account_file: "{{ service_account_file }}"
+        state: absent
+      register: database
+
+    - name: 'Delete compute instance'
+      google.cloud.gcp_compute_instance:
+        name: ansible-infra-node
+        zone: "{{ zone }}"
+        project: "{{ project }}"
+        auth_kind: "{{ auth_kind }}"
+        service_account_file: "{{ service_account_file }}"
+        state: absent
+      register: instance
+
+    - name: 'Delete a disk'
+      gcp_compute_disk:
+          name: 'disk-instance'
+          size_gb: 10
+          source_image: 'projects/ubuntu-os-cloud/global/images/family/ubuntu-2004-lts'
+          zone: "{{ zone }}"
+          project: "{{ project }}"
+          auth_kind: "{{ auth_kind }}"
+          service_account_file: "{{ service_account_file }}"
+          scopes:
+            - https://www.googleapis.com/auth/compute
+          state: absent
+      register: disk
+
+    - name: 'Delete an address'
+      google.cloud.gcp_compute_address:
+        name: ansible-node-address
+        region: "{{ region }}"
+        project: "{{ project }}"
+        auth_kind: "{{ auth_kind }}"
+        service_account_file: "{{ service_account_file }}"
+        state: absent
+      register: address
+
+    - name: 'Delete network'
+      gcp_compute_network:
+        name: ansible-network
+        project: "{{ project }}"
+        auth_kind: "{{ auth_kind }}"
+        service_account_file: "{{ service_account_file }}"
+        state: absent
+      register: network

@@ -1,0 +1,27 @@
+---
+
+  poll_interval:
+    description: "Polling interval"
+    type: "integer"
+    secret: false
+    required: false
+    default: 10
+  max_disk_percentage:
+    description: "Max allowed disk usage percentage"
+    type: "integer"
+    secret: false
+    required: true
+  logical_volume_path:
+    description: "path of the logical volume"
+    type: "string"
+    required: true
+  extend_amount:
+    description: "extend logical volume by amount"
+    type: "integer"
+    required: true
+  mount_point:
+    description: "mount point of logical volume"
+    type: "string"
+    required: true
+
+

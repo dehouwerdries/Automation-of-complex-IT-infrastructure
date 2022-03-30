@@ -1,0 +1,2 @@
+[appserver]
+34.140.255.22 ansible_ssh_user=ansible ansible_ssh_private_key_file=~/.ssh/ansible-key

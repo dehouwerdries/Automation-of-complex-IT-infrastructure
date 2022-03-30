@@ -1,0 +1,61 @@
+version: 1.0
+
+description: A JIRA and AD workflow that creates a User automatically and closes the ticket.
+
+# A list of strings, assuming value will be provided at runtime or
+# key value pairs where value is the default value when value
+# is not provided at runtime.
+input:
+  - issuekey
+
+# A list of key value pairs.
+vars:
+  - uname: null
+  - genpass: "default"
+  - ename: "default"
+  - converted_name: "default"
+
+# A dictionary of task definition. The order of execution is
+# determined by inbound task transition and the condition of
+# the outbound transition.
+tasks:
+  setup_task:
+    action: jira.transition_issue_by_name issue=<% ctx().issuekey %> transition_name="Being Processed"
+    next:
+      - do:
+          - getcustomfields
+  getcustomfields:
+    action: jira.get_issue issue_key=<% ctx().issuekey %> include_customfields=true
+    next:
+      - when: <% succeeded() %>
+        publish: ename=<% result().result.customfield_10028 %>
+        do: getpass
+  getpass:
+    action: passgen.generate_password length=10
+    next:
+      - when: <% succeeded() %>
+        publish: genpass=<% result().result %>
+        do: convertname
+  convertname:
+    action: jira.convert_name name=<% ctx(ename) %>
+    next:
+       - when: <% succeeded() %>
+         publish: converted_name=<% result().result %>
+         do: createuser
+  createuser:
+    action: activedirectory.new_ad_user hostname="test-ad-instance.europe-west1-b.c.the-lab-automation.internal" credential_name="prod" args='-Name "<% ctx(ename) %>" -SamAccountName "<% ctx(converted_name) %>" -AccountPassword (ConvertTo-SecureString "<% ctx(genpass) %>" -AsPlainText -Force) -Enabled $true -ChangePasswordAtLogon $true'
+    next:
+      - when: <% succeeded() %>
+        do: comment
+  comment:
+    action: jira.comment_issue issue_key=<% ctx().issuekey  %> comment_text=<% ctx().genpass %>
+    next:
+      - when: <% succeeded() %>
+        do: closeissue
+  closeissue:
+    action: jira.transition_issue_by_name issue=<% ctx().issuekey %> transition_name="Done"
+output:
+  #- pass: <% ctx().genpass %>
+  - ename: <% ctx(ename) %>
+  - convertedname: <% ctx(converted_name) %>
+  - pass: <% ctx(genpass) %>

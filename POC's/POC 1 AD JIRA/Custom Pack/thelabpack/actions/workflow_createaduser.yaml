@@ -1,0 +1,12 @@
+---
+name: workflow_createaduser
+pack: thelabpack
+description: A JIRA and AD workflow that creates a AD user automatically and closes the ticket.
+runner_type: orquesta
+entry_point: workflows/workflow_createaduser.yaml
+enabled: true
+parameters:
+  issuekey:
+    required: true
+    type: string
+    default: GVK-X

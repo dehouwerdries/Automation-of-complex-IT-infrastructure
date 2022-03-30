@@ -1,0 +1,6352 @@
+{
+  "name": "chef",
+  "normal": {
+    "tags": [
+
+    ]
+  },
+  "default": {
+    "audit": {
+      "inspec_backend_cache": true,
+      "reporter": null,
+      "fetcher": null,
+      "insecure": null,
+      "quiet": true,
+      "profiles": {
+
+      },
+      "inputs": {
+
+      },
+      "attributes": {
+
+      },
+      "waiver_file": null,
+      "json_file": {
+        "location": "/var/chef/compliance_reports/compliance-20220320141551.json"
+      },
+      "run_time_limit": 1.0,
+      "result_message_limit": 10000,
+      "result_include_backtrace": false,
+      "control_results_limit": 50,
+      "chef_node_attribute_enabled": true,
+      "compliance_phase": false,
+      "interval": {
+        "enabled": false,
+        "time": 1440
+      }
+    }
+  },
+  "automatic": {
+    "kernel": {
+      "name": "Linux",
+      "release": "5.8.0-63-generic",
+      "version": "#71-Ubuntu SMP Tue Jul 13 15:59:12 UTC 2021",
+      "machine": "x86_64",
+      "processor": "x86_64",
+      "os": "GNU/Linux",
+      "modules": {
+        "vsock_loopback": {
+          "size": "16384",
+          "refcount": "0"
+        },
+        "vmw_vsock_virtio_transport_common": {
+          "size": "36864",
+          "refcount": "1"
+        },
+        "vmw_vsock_vmci_transport": {
+          "size": "32768",
+          "refcount": "1",
+          "version": "1.0.5.0-k"
+        },
+        "vsock": {
+          "size": "45056",
+          "refcount": "5",
+          "version": "1.0.2.0-k"
+        },
+        "dm_multipath": {
+          "size": "36864",
+          "refcount": "0"
+        },
+        "scsi_dh_rdac": {
+          "size": "16384",
+          "refcount": "0",
+          "version": "01.00.0000.0000"
+        },
+        "scsi_dh_emc": {
+          "size": "16384",
+          "refcount": "0"
+        },
+        "scsi_dh_alua": {
+          "size": "20480",
+          "refcount": "0",
+          "version": "2.0"
+        },
+        "intel_rapl_msr": {
+          "size": "20480",
+          "refcount": "0"
+        },
+        "intel_rapl_common": {
+          "size": "28672",
+          "refcount": "1"
+        },
+        "rapl": {
+          "size": "20480",
+          "refcount": "0"
+        },
+        "vmw_balloon": {
+          "size": "24576",
+          "refcount": "0"
+        },
+        "joydev": {
+          "size": "28672",
+          "refcount": "0"
+        },
+        "input_leds": {
+          "size": "16384",
+          "refcount": "0"
+        },
+        "serio_raw": {
+          "size": "20480",
+          "refcount": "0"
+        },
+        "vmw_vmci": {
+          "size": "77824",
+          "refcount": "2",
+          "version": "1.1.6.0-k"
+        },
+        "mac_hid": {
+          "size": "16384",
+          "refcount": "0"
+        },
+        "sch_fq_codel": {
+          "size": "20480",
+          "refcount": "2"
+        },
+        "ip_tables": {
+          "size": "32768",
+          "refcount": "0"
+        },
+        "x_tables": {
+          "size": "49152",
+          "refcount": "1"
+        },
+        "autofs4": {
+          "size": "45056",
+          "refcount": "2"
+        },
+        "btrfs": {
+          "size": "1323008",
+          "refcount": "0"
+        },
+        "blake2b_generic": {
+          "size": "20480",
+          "refcount": "0"
+        },
+        "raid10": {
+          "size": "61440",
+          "refcount": "0"
+        },
+        "raid456": {
+          "size": "155648",
+          "refcount": "0"
+        },
+        "async_raid6_recov": {
+          "size": "24576",
+          "refcount": "1"
+        },
+        "async_memcpy": {
+          "size": "20480",
+          "refcount": "2"
+        },
+        "async_pq": {
+          "size": "24576",
+          "refcount": "2"
+        },
+        "async_xor": {
+          "size": "20480",
+          "refcount": "3"
+        },
+        "async_tx": {
+          "size": "20480",
+          "refcount": "5"
+        },
+        "xor": {
+          "size": "24576",
+          "refcount": "2"
+        },
+        "raid6_pq": {
+          "size": "114688",
+          "refcount": "4"
+        },
+        "libcrc32c": {
+          "size": "16384",
+          "refcount": "2"
+        },
+        "raid1": {
+          "size": "49152",
+          "refcount": "0"
+        },
+        "raid0": {
+          "size": "24576",
+          "refcount": "0"
+        },
+        "multipath": {
+          "size": "20480",
+          "refcount": "0"
+        },
+        "linear": {
+          "size": "20480",
+          "refcount": "0"
+        },
+        "vmwgfx": {
+          "size": "323584",
+          "refcount": "1",
+          "version": "2.18.0.0"
+        },
+        "ttm": {
+          "size": "102400",
+          "refcount": "1"
+        },
+        "drm_kms_helper": {
+          "size": "225280",
+          "refcount": "1"
+        },
+        "syscopyarea": {
+          "size": "16384",
+          "refcount": "1"
+        },
+        "crct10dif_pclmul": {
+          "size": "16384",
+          "refcount": "1"
+        },
+        "crc32_pclmul": {
+          "size": "16384",
+          "refcount": "0"
+        },
+        "ghash_clmulni_intel": {
+          "size": "16384",
+          "refcount": "0"
+        },
+        "aesni_intel": {
+          "size": "372736",
+          "refcount": "0"
+        },
+        "sysfillrect": {
+          "size": "16384",
+          "refcount": "1"
+        },
+        "sysimgblt": {
+          "size": "16384",
+          "refcount": "1"
+        },
+        "fb_sys_fops": {
+          "size": "16384",
+          "refcount": "1"
+        },
+        "cec": {
+          "size": "53248",
+          "refcount": "1"
+        },
+        "rc_core": {
+          "size": "61440",
+          "refcount": "1"
+        },
+        "crypto_simd": {
+          "size": "16384",
+          "refcount": "1"
+        },
+        "cryptd": {
+          "size": "24576",
+          "refcount": "2"
+        },
+        "glue_helper": {
+          "size": "16384",
+          "refcount": "1"
+        },
+        "psmouse": {
+          "size": "163840",
+          "refcount": "0"
+        },
+        "drm": {
+          "size": "565248",
+          "refcount": "4"
+        },
+        "e1000": {
+          "size": "151552",
+          "refcount": "0",
+          "version": "7.3.21-k8-NAPI"
+        },
+        "mptspi": {
+          "size": "24576",
+          "refcount": "3",
+          "version": "3.04.20"
+        },
+        "mptscsih": {
+          "size": "45056",
+          "refcount": "1",
+          "version": "3.04.20"
+        },
+        "mptbase": {
+          "size": "98304",
+          "refcount": "2",
+          "version": "3.04.20"
+        },
+        "scsi_transport_spi": {
+          "size": "32768",
+          "refcount": "1"
+        },
+        "i2c_piix4": {
+          "size": "28672",
+          "refcount": "0"
+        },
+        "pata_acpi": {
+          "size": "16384",
+          "refcount": "0",
+          "version": "0.2.3"
+        }
+      }
+    },
+    "memory": {
+      "swap": {
+        "cached": "0kB",
+        "total": "2097148kB",
+        "free": "2097148kB"
+      },
+      "hugepages": {
+        "total": "0",
+        "free": "0",
+        "reserved": "0",
+        "surplus": "0"
+      },
+      "directmap": {
+        "4k": "135040kB",
+        "2M": "4059136kB",
+        "1G": "2097152kB"
+      },
+      "total": "4026644kB",
+      "free": "2726392kB",
+      "available": "3537436kB",
+      "buffers": "61648kB",
+      "cached": "907344kB",
+      "active": "416232kB",
+      "inactive": "667988kB",
+      "dirty": "11332kB",
+      "writeback": "0kB",
+      "anon_pages": "134796kB",
+      "mapped": "88788kB",
+      "slab": "155692kB",
+      "slab_reclaimable": "95276kB",
+      "slab_unreclaim": "60416kB",
+      "page_tables": "2328kB",
+      "nfs_unstable": "0kB",
+      "bounce": "0kB",
+      "commit_limit": "4110468kB",
+      "committed_as": "597772kB",
+      "vmalloc_total": "34359738367kB",
+      "vmalloc_used": "17084kB",
+      "vmalloc_chunk": "0kB",
+      "hugepage_size": "2048kB",
+      "hugetlb": "0kB"
+    },
+    "network": {
+      "interfaces": {
+        "lo": {
+          "mtu": "65536",
+          "flags": [
+            "LOOPBACK",
+            "UP",
+            "LOWER_UP"
+          ],
+          "encapsulation": "Loopback",
+          "addresses": {
+            "127.0.0.1": {
+              "family": "inet",
+              "prefixlen": "8",
+              "netmask": "255.0.0.0",
+              "scope": "Node"
+            }
+          },
+          "state": "unknown"
+        },
+        "eth0": {
+          "type": "eth",
+          "number": "0",
+          "mtu": "1500",
+          "flags": [
+            "BROADCAST",
+            "MULTICAST",
+            "UP",
+            "LOWER_UP"
+          ],
+          "encapsulation": "Ethernet",
+          "addresses": {
+            "00:0C:29:FC:39:92": {
+              "family": "lladdr"
+            },
+            "192.168.169.235": {
+              "family": "inet",
+              "prefixlen": "24",
+              "netmask": "255.255.255.0",
+              "broadcast": "192.168.169.255",
+              "scope": "Global"
+            },
+            "fe80::20c:29ff:fefc:3992": {
+              "family": "inet6",
+              "prefixlen": "64",
+              "scope": "Link",
+              "tags": [
+
+              ]
+            }
+          },
+          "state": "up",
+          "arp": {
+            "192.168.169.2": "00:50:56:fb:91:10"
+          },
+          "routes": [
+            {
+              "destination": "default",
+              "family": "inet",
+              "via": "192.168.169.2",
+              "metric": "100",
+              "proto": "dhcp",
+              "src": "192.168.169.235"
+            },
+            {
+              "destination": "192.168.169.0/24",
+              "family": "inet",
+              "scope": "link",
+              "proto": "kernel",
+              "src": "192.168.169.235"
+            },
+            {
+              "destination": "192.168.169.2",
+              "family": "inet",
+              "scope": "link",
+              "metric": "100",
+              "proto": "dhcp",
+              "src": "192.168.169.235"
+            },
+            {
+              "destination": "fe80::/64",
+              "family": "inet6",
+              "metric": "256",
+              "proto": "kernel"
+            }
+          ],
+          "link_speed": 1000,
+          "duplex": "Full",
+          "auto_negotiation": "on",
+          "port": "Twisted Pair",
+          "transceiver": "internal",
+          "mdi_x": "off (auto)",
+          "ring_params": {
+            "max_rx": 4096,
+            "max_rx_mini": 0,
+            "max_rx_jumbo": 0,
+            "max_tx": 4096,
+            "current_rx": 256,
+            "current_rx_mini": 0,
+            "current_rx_jumbo": 0,
+            "current_tx": 256
+          },
+          "channel_params": {
+
+          },
+          "coalesce_params": {
+            "adaptive_rx": "n/a",
+            "adaptive_tx": "n/a",
+            "stats-block-usecs": 0,
+            "sample-interval": 0,
+            "pkt-rate-low": 0,
+            "pkt-rate-high": 0,
+            "rx-usecs": 3,
+            "rx-frames": 0,
+            "rx-usecs-irq": 0,
+            "rx-frames-irq": 0,
+            "tx-usecs": 0,
+            "tx-frames": 0,
+            "tx-usecs-irq": 0,
+            "tx-frames-irq": 0,
+            "rx-usecs-low": 0,
+            "rx-frame-low": 0,
+            "tx-usecs-low": 0,
+            "tx-frame-low": 0,
+            "rx-usecs-high": 0,
+            "rx-frame-high": 0,
+            "tx-usecs-high": 0,
+            "tx-frame-high": 0
+          },
+          "offload_params": {
+            "rx-checksumming": "off",
+            "tx-checksumming": "on",
+            "tx-checksum-ipv4": "off",
+            "tx-checksum-ip-generic": "on",
+            "tx-checksum-ipv6": "off",
+            "tx-checksum-fcoe-crc": "off",
+            "tx-checksum-sctp": "off",
+            "scatter-gather": "on",
+            "tx-scatter-gather": "on",
+            "tx-scatter-gather-fraglist": "off",
+            "tcp-segmentation-offload": "on",
+            "tx-tcp-segmentation": "on",
+            "tx-tcp-ecn-segmentation": "off",
+            "tx-tcp-mangleid-segmentation": "off",
+            "tx-tcp6-segmentation": "off",
+            "generic-segmentation-offload": "on",
+            "generic-receive-offload": "on",
+            "large-receive-offload": "off",
+            "rx-vlan-offload": "on",
+            "tx-vlan-offload": "on",
+            "ntuple-filters": "off",
+            "receive-hashing": "off",
+            "highdma": "off",
+            "rx-vlan-filter": "on",
+            "vlan-challenged": "off",
+            "tx-lockless": "off",
+            "netns-local": "off",
+            "tx-gso-robust": "off",
+            "tx-fcoe-segmentation": "off",
+            "tx-gre-segmentation": "off",
+            "tx-gre-csum-segmentation": "off",
+            "tx-ipxip4-segmentation": "off",
+            "tx-ipxip6-segmentation": "off",
+            "tx-udp_tnl-segmentation": "off",
+            "tx-udp_tnl-csum-segmentation": "off",
+            "tx-gso-partial": "off",
+            "tx-tunnel-remcsum-segmentation": "off",
+            "tx-sctp-segmentation": "off",
+            "tx-esp-segmentation": "off",
+            "tx-udp-segmentation": "off",
+            "tx-gso-list": "off",
+            "fcoe-mtu": "off",
+            "tx-nocache-copy": "off",
+            "loopback": "off",
+            "rx-fcs": "off",
+            "rx-all": "off",
+            "tx-vlan-stag-hw-insert": "off",
+            "rx-vlan-stag-hw-parse": "off",
+            "rx-vlan-stag-filter": "off",
+            "l2-fwd-offload": "off",
+            "hw-tc-offload": "off",
+            "esp-hw-offload": "off",
+            "esp-tx-csum-hw-offload": "off",
+            "rx-udp_tunnel-port-offload": "off",
+            "tls-hw-tx-offload": "off",
+            "tls-hw-rx-offload": "off",
+            "rx-gro-hw": "off",
+            "tls-hw-record": "off",
+            "rx-gro-list": "off",
+            "macsec-hw-offload": "off"
+          },
+          "driver_info": {
+            "driver": "e1000",
+            "version": "7.3.21-k8-NAPI",
+            "firmware-version": "",
+            "expansion-rom-version": "",
+            "bus-info": "0000:02:00.0",
+            "supports-statistics": "yes",
+            "supports-test": "yes",
+            "supports-eeprom-access": "yes",
+            "supports-register-dump": "yes",
+            "supports-priv-flags": "no"
+          },
+          "pause_params": {
+            "autonegotiate": true,
+            "rx": false,
+            "tx": false
+          }
+        }
+      },
+      "default_interface": "eth0",
+      "default_gateway": "192.168.169.2"
+    },
+    "counters": {
+      "network": {
+        "interfaces": {
+          "lo": {
+            "tx": {
+              "queuelen": "1000",
+              "bytes": "21366",
+              "packets": "248",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            },
+            "rx": {
+              "bytes": "21366",
+              "packets": "248",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            }
+          },
+          "eth0": {
+            "tx": {
+              "queuelen": "1000",
+              "bytes": "1694558",
+              "packets": "24373",
+              "errors": "0",
+              "drop": "0",
+              "carrier": "0",
+              "collisions": "0"
+            },
+            "rx": {
+              "bytes": "265257098",
+              "packets": "178277",
+              "errors": "0",
+              "drop": "0",
+              "overrun": "0"
+            }
+          }
+        }
+      }
+    },
+    "IPAddress": "192.168.169.2",
+    "ipaddress": "192.168.169.235",
+    "macaddress": "00:0C:29:FC:39:92",
+    "ip6address": "fe80::20c:29ff:fefc:3992",
+    "lsb": {
+      "id": "Ubuntu",
+      "description": "Ubuntu 20.10",
+      "release": "20.10",
+      "codename": "groovy"
+    },
+    "os": "linux",
+    "os_version": "5.8.0-63-generic",
+    "platform": "ubuntu",
+    "platform_version": "20.10",
+    "platform_family": "debian",
+    "uptime_seconds": 48,
+    "uptime": "48 seconds",
+    "idletime_seconds": 45,
+    "idletime": "45 seconds",
+    "dmi": {
+      "dmidecode_version": "3.2",
+      "smbios_version": "2.7",
+      "structures": {
+        "count": "242",
+        "size": "9910"
+      },
+      "table_location": "0x000E0010",
+      "bios": {
+        "all_records": [
+          {
+            "record_id": "0x0000",
+            "size": "0",
+            "application_identifier": "BIOS Information",
+            "Vendor": "Phoenix Technologies LTD",
+            "Version": "6.00",
+            "Release Date": "07/22/2020",
+            "Address": "0xEA480",
+            "Runtime Size": "88960 bytes",
+            "ROM Size": "64 kB",
+            "Characteristics": {
+              "Targeted content distribution is supported": null
+            },
+            "BIOS Revision": "4.6",
+            "Firmware Revision": "0.0"
+          }
+        ],
+        "vendor": "Phoenix Technologies LTD",
+        "version": "6.00",
+        "release_date": "07/22/2020",
+        "address": "0xEA480",
+        "runtime_size": "88960 bytes",
+        "rom_size": "64 kB",
+        "bios_revision": "4.6",
+        "firmware_revision": "0.0"
+      },
+      "system": {
+        "all_records": [
+          {
+            "record_id": "0x0001",
+            "size": "1",
+            "application_identifier": "System Information",
+            "Manufacturer": "VMware, Inc.",
+            "Product Name": "VMware Virtual Platform",
+            "Version": "None",
+            "Serial Number": "VMware-56 4d 22 88 85 f8 4c c8-06 c0 32 40 17 fc 39 92",
+            "UUID": "88224d56-f885-c84c-06c0-324017fc3992",
+            "Wake-up Type": "Power Switch",
+            "SKU Number": "Not Specified",
+            "Family": "Not Specified"
+          }
+        ],
+        "manufacturer": "VMware, Inc.",
+        "product_name": "VMware Virtual Platform",
+        "version": "None",
+        "serial_number": "VMware-56 4d 22 88 85 f8 4c c8-06 c0 32 40 17 fc 39 92",
+        "uuid": "88224d56-f885-c84c-06c0-324017fc3992",
+        "wake_up_type": "Power Switch",
+        "sku_number": "Not Specified",
+        "family": "Not Specified"
+      },
+      "base_board": {
+        "all_records": [
+          {
+            "record_id": "0x0002",
+            "size": "2",
+            "application_identifier": "Base Board Information",
+            "Manufacturer": "Intel Corporation",
+            "Product Name": "440BX Desktop Reference Platform",
+            "Version": "None",
+            "Serial Number": "None",
+            "Asset Tag": "Not Specified",
+            "Features": "None",
+            "Location In Chassis": "Not Specified",
+            "Chassis Handle": "0x0000",
+            "Type": "Unknown",
+            "Contained Object Handles": "0"
+          }
+        ],
+        "manufacturer": "Intel Corporation",
+        "product_name": "440BX Desktop Reference Platform",
+        "version": "None",
+        "serial_number": "None",
+        "asset_tag": "Not Specified",
+        "features": "None",
+        "location_in_chassis": "Not Specified",
+        "chassis_handle": "0x0000",
+        "type": "Unknown",
+        "contained_object_handles": "0"
+      },
+      "chassis": {
+        "all_records": [
+          {
+            "record_id": "0x0003",
+            "size": "3",
+            "application_identifier": "Chassis Information",
+            "Manufacturer": "No Enclosure",
+            "Type": "Other",
+            "Lock": "Not Present",
+            "Version": "N/A",
+            "Serial Number": "None",
+            "Asset Tag": "No Asset Tag",
+            "Boot-up State": "Safe",
+            "Power Supply State": "Safe",
+            "Thermal State": "Safe",
+            "Security Status": "None",
+            "OEM Information": "0x00001234",
+            "Height": "Unspecified",
+            "Number Of Power Cords": "Unspecified",
+            "Contained Elements": "0"
+          }
+        ],
+        "manufacturer": "No Enclosure",
+        "type": "Other",
+        "lock": "Not Present",
+        "version": "N/A",
+        "serial_number": "None",
+        "asset_tag": "No Asset Tag",
+        "boot_up_state": "Safe",
+        "power_supply_state": "Safe",
+        "thermal_state": "Safe",
+        "security_status": "None",
+        "oem_information": "0x00001234",
+        "height": "Unspecified",
+        "number_of_power_cords": "Unspecified",
+        "contained_elements": "0"
+      },
+      "processor": {
+        "all_records": [
+          {
+            "record_id": "0x0004",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU #000",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "GenuineIntel",
+            "ID": "52 06 0A 00 FF FB 8B 0F",
+            "Version": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "2600 MHz",
+            "Status": "Populated, Enabled",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0016",
+            "L2 Cache Handle": "0x0018",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified",
+            "Core Count": "1",
+            "Core Enabled": "1",
+            "Characteristics": {
+              "Execute Protection": null
+            }
+          },
+          {
+            "record_id": "0x0004",
+            "size": "4",
+            "application_identifier": "Processor Information",
+            "Socket Designation": "CPU #001",
+            "Type": "Central Processor",
+            "Family": "Unknown",
+            "Manufacturer": "GenuineIntel",
+            "ID": "52 06 00 00 FF FB 8B 0F",
+            "Version": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+            "Voltage": "3.3 V",
+            "External Clock": "Unknown",
+            "Max Speed": "30000 MHz",
+            "Current Speed": "2600 MHz",
+            "Status": "Populated, Enabled",
+            "Upgrade": "ZIF Socket",
+            "L1 Cache Handle": "0x0016",
+            "L2 Cache Handle": "0x0018",
+            "L3 Cache Handle": "Not Provided",
+            "Serial Number": "Not Specified",
+            "Asset Tag": "Not Specified",
+            "Part Number": "Not Specified",
+            "Core Count": "1",
+            "Core Enabled": "1",
+            "Characteristics": {
+              "Execute Protection": null
+            }
+          }
+        ],
+        "type": "Central Processor",
+        "family": "Unknown",
+        "manufacturer": "GenuineIntel",
+        "version": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "voltage": "3.3 V",
+        "external_clock": "Unknown",
+        "max_speed": "30000 MHz",
+        "current_speed": "2600 MHz",
+        "status": "Populated, Enabled",
+        "upgrade": "ZIF Socket",
+        "l1_cache_handle": "0x0016",
+        "l2_cache_handle": "0x0018",
+        "l3_cache_handle": "Not Provided",
+        "serial_number": "Not Specified",
+        "asset_tag": "Not Specified",
+        "part_number": "Not Specified",
+        "core_count": "1",
+        "core_enabled": "1"
+      },
+      "memory_module": {
+        "all_records": [
+          {
+            "record_id": "0x0007",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #0",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "EDO DIMM",
+            "Installed Size": "4096 MB (Single-bank Connection)",
+            "Enabled Size": "4096 MB (Single-bank Connection)",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x0008",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #1",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x0009",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #2",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x000A",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #3",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x000B",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #4",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x000C",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #5",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x000D",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #6",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x000E",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #7",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x000F",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #8",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x0010",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #9",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x0011",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #10",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x0012",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #11",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x0013",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #12",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x0014",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #13",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          },
+          {
+            "record_id": "0x0015",
+            "size": "6",
+            "application_identifier": "Memory Module Information",
+            "Socket Designation": "RAM socket #14",
+            "Bank Connections": "None",
+            "Current Speed": "Unknown",
+            "Type": "DIMM",
+            "Installed Size": "Not Installed",
+            "Enabled Size": "Not Installed",
+            "Error Status": "OK"
+          }
+        ],
+        "bank_connections": "None",
+        "current_speed": "Unknown",
+        "error_status": "OK"
+      },
+      "oem_strings": {
+        "all_records": [
+          {
+            "record_id": "0x0026",
+            "size": "11",
+            "application_identifier": "OEM Strings",
+            "String 1": "[MS_VM_CERT/SHA1/27d66596a61c48dd3dc7216fd715126e33f59ae7]",
+            "String 2": "Welcome to the Virtual Machine"
+          }
+        ],
+        "string_1": "[MS_VM_CERT/SHA1/27d66596a61c48dd3dc7216fd715126e33f59ae7]",
+        "string_2": "Welcome to the Virtual Machine"
+      }
+    },
+    "cpu": {
+      "numa_node_cpus": {
+        "0": [
+          0,
+          1
+        ]
+      },
+      "vulnerability": {
+        "itlb_multihit": "KVM: Mitigation: VMX unsupported",
+        "l1tf": "Not affected",
+        "mds": "Not affected",
+        "meltdown": "Not affected",
+        "spec_store_bypass": "Mitigation; Speculative Store Bypass disabled via prctl and seccomp",
+        "spectre_v1": "Mitigation; usercopy/swapgs barriers and __user pointer sanitization",
+        "spectre_v2": "Mitigation; Full generic retpoline, IBPB conditional, IBRS_FW, STIBP disabled, RSB filling",
+        "srbds": "Not affected",
+        "tsx_async_abort": "Not affected"
+      },
+      "architecture": "x86_64",
+      "cpu_opmodes": [
+        "32-bit",
+        "64-bit"
+      ],
+      "byte_order": "little endian",
+      "address_sizes": [
+        "42 bits physical",
+        "48 bits virtual"
+      ],
+      "cpus": 2,
+      "cpus_online": 2,
+      "threads_per_core": 1,
+      "cores_per_socket": 1,
+      "sockets": 2,
+      "numa_nodes": 1,
+      "vendor_id": "GenuineIntel",
+      "family": "6",
+      "model": "165",
+      "model_name": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+      "stepping": "2",
+      "mhz": "2592.006",
+      "bogomips": "5184.01",
+      "hypervisor_vendor": "VMware",
+      "virtualization_type": "full",
+      "l1d_cache": "64 KiB",
+      "l1i_cache": "64 KiB",
+      "l2_cache": "512 KiB",
+      "l3_cache": "24 MiB",
+      "flags": [
+        "3dnowprefetch",
+        "abm",
+        "adx",
+        "aes",
+        "apic",
+        "arat",
+        "arch_capabilities",
+        "arch_perfmon",
+        "avx",
+        "avx2",
+        "bmi1",
+        "bmi2",
+        "clflush",
+        "cmov",
+        "constant_tsc",
+        "cpuid",
+        "cx16",
+        "cx8",
+        "de",
+        "f16c",
+        "flush_l1d",
+        "fma",
+        "fpu",
+        "fsgsbase",
+        "fxsr",
+        "hypervisor",
+        "ibpb",
+        "ibrs",
+        "invpcid",
+        "invpcid_single",
+        "lahf_lm",
+        "lm",
+        "mca",
+        "mce",
+        "mmx",
+        "movbe",
+        "msr",
+        "mtrr",
+        "nonstop_tsc",
+        "nopl",
+        "nx",
+        "pae",
+        "pat",
+        "pcid",
+        "pclmulqdq",
+        "pdpe1gb",
+        "pge",
+        "pni",
+        "popcnt",
+        "pse",
+        "pse36",
+        "rdrand",
+        "rdseed",
+        "rdtscp",
+        "sep",
+        "smap",
+        "smep",
+        "ss",
+        "ssbd",
+        "sse",
+        "sse2",
+        "sse4_1",
+        "sse4_2",
+        "ssse3",
+        "stibp",
+        "syscall",
+        "tsc",
+        "tsc_adjust",
+        "tsc_deadline_timer",
+        "tsc_reliable",
+        "vme",
+        "x2apic",
+        "xsave",
+        "xsaveopt",
+        "xtopology"
+      ],
+      "0": {
+        "vendor_id": "GenuineIntel",
+        "family": "6",
+        "model": "165",
+        "model_name": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "stepping": "2",
+        "mhz": "2592.006",
+        "bogomips": "5184.01",
+        "cache_size": "12288 KB",
+        "physical_id": "0",
+        "core_id": "0",
+        "cores": "1",
+        "flags": [
+          "3dnowprefetch",
+          "abm",
+          "adx",
+          "aes",
+          "apic",
+          "arat",
+          "arch_capabilities",
+          "arch_perfmon",
+          "avx",
+          "avx2",
+          "bmi1",
+          "bmi2",
+          "clflush",
+          "cmov",
+          "constant_tsc",
+          "cpuid",
+          "cx16",
+          "cx8",
+          "de",
+          "f16c",
+          "flush_l1d",
+          "fma",
+          "fpu",
+          "fsgsbase",
+          "fxsr",
+          "hypervisor",
+          "ibpb",
+          "ibrs",
+          "invpcid",
+          "invpcid_single",
+          "lahf_lm",
+          "lm",
+          "mca",
+          "mce",
+          "mmx",
+          "movbe",
+          "msr",
+          "mtrr",
+          "nonstop_tsc",
+          "nopl",
+          "nx",
+          "pae",
+          "pat",
+          "pcid",
+          "pclmulqdq",
+          "pdpe1gb",
+          "pge",
+          "pni",
+          "popcnt",
+          "pse",
+          "pse36",
+          "rdrand",
+          "rdseed",
+          "rdtscp",
+          "sep",
+          "smap",
+          "smep",
+          "ss",
+          "ssbd",
+          "sse",
+          "sse2",
+          "sse4_1",
+          "sse4_2",
+          "ssse3",
+          "stibp",
+          "syscall",
+          "tsc",
+          "tsc_adjust",
+          "tsc_deadline_timer",
+          "tsc_reliable",
+          "vme",
+          "x2apic",
+          "xsave",
+          "xsaveopt",
+          "xtopology"
+        ]
+      },
+      "1": {
+        "vendor_id": "GenuineIntel",
+        "family": "6",
+        "model": "165",
+        "model_name": "Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz",
+        "stepping": "2",
+        "mhz": "2592.006",
+        "bogomips": "5184.01",
+        "cache_size": "12288 KB",
+        "physical_id": "1",
+        "core_id": "1",
+        "cores": "1",
+        "flags": [
+          "3dnowprefetch",
+          "abm",
+          "adx",
+          "aes",
+          "apic",
+          "arat",
+          "arch_capabilities",
+          "arch_perfmon",
+          "avx",
+          "avx2",
+          "bmi1",
+          "bmi2",
+          "clflush",
+          "cmov",
+          "constant_tsc",
+          "cpuid",
+          "cx16",
+          "cx8",
+          "de",
+          "f16c",
+          "flush_l1d",
+          "fma",
+          "fpu",
+          "fsgsbase",
+          "fxsr",
+          "hypervisor",
+          "ibpb",
+          "ibrs",
+          "invpcid",
+          "invpcid_single",
+          "lahf_lm",
+          "lm",
+          "mca",
+          "mce",
+          "mmx",
+          "movbe",
+          "msr",
+          "mtrr",
+          "nonstop_tsc",
+          "nopl",
+          "nx",
+          "pae",
+          "pat",
+          "pcid",
+          "pclmulqdq",
+          "pdpe1gb",
+          "pge",
+          "pni",
+          "popcnt",
+          "pse",
+          "pse36",
+          "rdrand",
+          "rdseed",
+          "rdtscp",
+          "sep",
+          "smap",
+          "smep",
+          "ss",
+          "ssbd",
+          "sse",
+          "sse2",
+          "sse4_1",
+          "sse4_2",
+          "ssse3",
+          "stibp",
+          "syscall",
+          "tsc",
+          "tsc_adjust",
+          "tsc_deadline_timer",
+          "tsc_reliable",
+          "vme",
+          "x2apic",
+          "xsave",
+          "xsaveopt",
+          "xtopology"
+        ]
+      },
+      "total": 2,
+      "real": 2,
+      "cores": 2
+    },
+    "virtualization": {
+      "systems": {
+        "vmware": "guest"
+      },
+      "system": "vmware",
+      "role": "guest"
+    },
+    "languages": {
+      "c": {
+        "glibc": {
+          "version": "2.32",
+          "description": "ldd (Ubuntu GLIBC 2.32-0ubuntu3) 2.32"
+        }
+      },
+      "perl": {
+        "version": "5.30.3",
+        "archname": "x86_64-linux-gnu-thread-multi"
+      },
+      "ruby": {
+        "platform": "x86_64-linux",
+        "version": "3.0.3",
+        "release_date": "2021-11-24",
+        "target": "x86_64-pc-linux-gnu",
+        "target_cpu": "x86_64",
+        "target_vendor": "pc",
+        "target_os": "linux",
+        "host": "x86_64-pc-linux-gnu",
+        "host_cpu": "x86_64",
+        "host_os": "linux",
+        "host_vendor": "pc",
+        "bin_dir": "/opt/chef/embedded/bin",
+        "ruby_bin": "/opt/chef/embedded/bin/ruby",
+        "gem_bin": "/opt/chef/embedded/bin/gem",
+        "gems_dir": "/opt/chef/embedded/lib/ruby/gems/3.0.0"
+      }
+    },
+    "chef_packages": {
+      "chef": {
+        "version": "17.9.52",
+        "chef_root": "/opt/chef/embedded/lib/ruby/gems/3.0.0/gems/chef-17.9.52/lib",
+        "chef_effortless": null
+      },
+      "ohai": {
+        "version": "17.9.0",
+        "ohai_root": "/opt/chef/embedded/lib/ruby/gems/3.0.0/gems/ohai-17.9.0/lib/ohai"
+      }
+    },
+    "hostname": "chef",
+    "machinename": "chef",
+    "fqdn": "chef",
+    "domain": null,
+    "cloud": null,
+    "command": {
+      "ps": "ps -ef"
+    },
+    "filesystem": {
+      "by_device": {
+        "tmpfs": {
+          "kb_size": "402664",
+          "kb_used": "4",
+          "kb_available": "402660",
+          "percent_used": "1%",
+          "total_inodes": "100666",
+          "inodes_used": "25",
+          "inodes_available": "100641",
+          "inodes_percent_used": "1%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "size=402668k",
+            "mode=755"
+          ],
+          "mounts": [
+            "/run",
+            "/dev/shm",
+            "/run/lock",
+            "/sys/fs/cgroup",
+            "/run/user/1000",
+            "/run/snapd/ns"
+          ]
+        },
+        "/dev/mapper/ubuntu--vg-ubuntu--lv": {
+          "kb_size": "65277516",
+          "kb_used": "4981920",
+          "kb_available": "56949984",
+          "percent_used": "9%",
+          "total_inodes": "4161536",
+          "inodes_used": "93584",
+          "inodes_available": "4067952",
+          "inodes_percent_used": "3%",
+          "fs_type": "ext4",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "uuid": "9bd5526f-2cb8-45c2-9e6b-cbfe0a3f790c",
+          "mounts": [
+            "/"
+          ]
+        },
+        "/dev/sda2": {
+          "kb_size": "999320",
+          "kb_used": "115656",
+          "kb_available": "814852",
+          "percent_used": "13%",
+          "total_inodes": "65536",
+          "inodes_used": "312",
+          "inodes_available": "65224",
+          "inodes_percent_used": "1%",
+          "fs_type": "ext4",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "uuid": "e721692b-67d6-4630-8dfe-11cf118863d0",
+          "mounts": [
+            "/boot"
+          ]
+        },
+        "vmhgfs-fuse": {
+          "kb_size": "976760828",
+          "kb_used": "635338876",
+          "kb_available": "341421952",
+          "percent_used": "66%",
+          "fs_type": "fuse.vmhgfs-fuse",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "relatime",
+            "user_id=0",
+            "group_id=0",
+            "default_permissions",
+            "allow_other"
+          ],
+          "mounts": [
+            "/mnt/vagrant-mounts/1000-1000",
+            "/tmp/vagrant-chef/087ac7020770bf16fc17e74c8d1b6af6/nodes",
+            "/tmp/vagrant-chef/e2c80f2aae1e103544a400740a4a9c16/cookbooks"
+          ]
+        },
+        "sysfs": {
+          "fs_type": "sysfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "mounts": [
+            "/sys"
+          ]
+        },
+        "proc": {
+          "fs_type": "proc",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "mounts": [
+            "/proc"
+          ]
+        },
+        "udev": {
+          "fs_type": "devtmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "noexec",
+            "relatime",
+            "size=1965972k",
+            "nr_inodes=491493",
+            "mode=755"
+          ],
+          "mounts": [
+            "/dev"
+          ]
+        },
+        "devpts": {
+          "fs_type": "devpts",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "noexec",
+            "relatime",
+            "gid=5",
+            "mode=620",
+            "ptmxmode=000"
+          ],
+          "mounts": [
+            "/dev/pts"
+          ]
+        },
+        "securityfs": {
+          "fs_type": "securityfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "mounts": [
+            "/sys/kernel/security"
+          ]
+        },
+        "cgroup2": {
+          "fs_type": "cgroup2",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "nsdelegate"
+          ],
+          "mounts": [
+            "/sys/fs/cgroup/unified"
+          ]
+        },
+        "cgroup": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "rdma"
+          ],
+          "mounts": [
+            "/sys/fs/cgroup/systemd",
+            "/sys/fs/cgroup/cpuset",
+            "/sys/fs/cgroup/memory",
+            "/sys/fs/cgroup/cpu,cpuacct",
+            "/sys/fs/cgroup/perf_event",
+            "/sys/fs/cgroup/pids",
+            "/sys/fs/cgroup/blkio",
+            "/sys/fs/cgroup/freezer",
+            "/sys/fs/cgroup/hugetlb",
+            "/sys/fs/cgroup/net_cls,net_prio",
+            "/sys/fs/cgroup/devices",
+            "/sys/fs/cgroup/rdma"
+          ]
+        },
+        "pstore": {
+          "fs_type": "pstore",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "mounts": [
+            "/sys/fs/pstore"
+          ]
+        },
+        "none": {
+          "fs_type": "bpf",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "mode=700"
+          ],
+          "mounts": [
+            "/sys/fs/bpf"
+          ]
+        },
+        "systemd-1": {
+          "fs_type": "autofs",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "fd=28",
+            "pgrp=1",
+            "timeout=0",
+            "minproto=5",
+            "maxproto=5",
+            "direct",
+            "pipe_ino=18277"
+          ],
+          "mounts": [
+            "/proc/sys/fs/binfmt_misc"
+          ]
+        },
+        "hugetlbfs": {
+          "fs_type": "hugetlbfs",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "pagesize=2M"
+          ],
+          "mounts": [
+            "/dev/hugepages"
+          ]
+        },
+        "mqueue": {
+          "fs_type": "mqueue",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "mounts": [
+            "/dev/mqueue"
+          ]
+        },
+        "debugfs": {
+          "fs_type": "debugfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "mounts": [
+            "/sys/kernel/debug"
+          ]
+        },
+        "tracefs": {
+          "fs_type": "tracefs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "mounts": [
+            "/sys/kernel/tracing"
+          ]
+        },
+        "fusectl": {
+          "fs_type": "fusectl",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "mounts": [
+            "/sys/fs/fuse/connections"
+          ]
+        },
+        "configfs": {
+          "fs_type": "configfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "mounts": [
+            "/sys/kernel/config"
+          ]
+        },
+        "/var/lib/snapd/snaps/core18_1885.snap": {
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime",
+            "x-gdu.hide"
+          ],
+          "mounts": [
+            "/snap/core18/1885"
+          ]
+        },
+        "/var/lib/snapd/snaps/lxd_17936.snap": {
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime",
+            "x-gdu.hide"
+          ],
+          "mounts": [
+            "/snap/lxd/17936"
+          ]
+        },
+        "/var/lib/snapd/snaps/snapd_9721.snap": {
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime",
+            "x-gdu.hide"
+          ],
+          "mounts": [
+            "/snap/snapd/9721"
+          ]
+        },
+        "/var/lib/snapd/snaps/snapd_15177.snap": {
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime",
+            "x-gdu.hide"
+          ],
+          "mounts": [
+            "/snap/snapd/15177"
+          ]
+        },
+        "/var/lib/snapd/snaps/core18_2344.snap": {
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime",
+            "x-gdu.hide"
+          ],
+          "mounts": [
+            "/snap/core18/2344"
+          ]
+        },
+        "/var/lib/snapd/snaps/core20_1376.snap": {
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime",
+            "x-gdu.hide"
+          ],
+          "mounts": [
+            "/snap/core20/1376"
+          ]
+        },
+        "/var/lib/snapd/snaps/lxd_22678.snap": {
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime",
+            "x-gdu.hide"
+          ],
+          "mounts": [
+            "/snap/lxd/22678"
+          ]
+        },
+        "nsfs": {
+          "fs_type": "nsfs",
+          "mount_options": [
+            "rw"
+          ],
+          "mounts": [
+            "/run/snapd/ns/lxd.mnt"
+          ]
+        },
+        "/dev/loop0": {
+          "fs_type": "squashfs",
+          "mounts": [
+            "/snap/core18/1885"
+          ],
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ]
+        },
+        "/dev/loop1": {
+          "fs_type": "squashfs",
+          "mounts": [
+            "/snap/lxd/17936"
+          ],
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ]
+        },
+        "/dev/loop2": {
+          "fs_type": "squashfs",
+          "mounts": [
+            "/snap/snapd/9721"
+          ],
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ]
+        },
+        "/dev/loop3": {
+          "fs_type": "squashfs",
+          "mounts": [
+            "/snap/snapd/15177"
+          ],
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ]
+        },
+        "/dev/loop4": {
+          "fs_type": "squashfs",
+          "mounts": [
+            "/snap/core18/2344"
+          ],
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ]
+        },
+        "/dev/loop5": {
+          "fs_type": "squashfs",
+          "mounts": [
+            "/snap/core20/1376"
+          ],
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ]
+        },
+        "/dev/loop6": {
+          "fs_type": "squashfs",
+          "mounts": [
+            "/snap/lxd/22678"
+          ],
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ]
+        },
+        "/dev/sda": {
+          "mounts": [
+
+          ]
+        },
+        "/dev/sda3": {
+          "fs_type": "LVM2_member",
+          "uuid": "fZnkkZ-TTqv-HmX0-JB2V-Hu93-PXyl-2zvfQ9",
+          "mounts": [
+
+          ]
+        },
+        "/dev/sda1": {
+          "mounts": [
+
+          ]
+        },
+        "/dev/sr0": {
+          "mounts": [
+
+          ]
+        }
+      },
+      "by_mountpoint": {
+        "/run": {
+          "kb_size": "402668",
+          "kb_used": "1128",
+          "kb_available": "401540",
+          "percent_used": "1%",
+          "total_inodes": "503330",
+          "inodes_used": "708",
+          "inodes_available": "502622",
+          "inodes_percent_used": "1%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "size=402668k",
+            "mode=755"
+          ],
+          "devices": [
+            "tmpfs"
+          ]
+        },
+        "/": {
+          "kb_size": "65277516",
+          "kb_used": "4981920",
+          "kb_available": "56949984",
+          "percent_used": "9%",
+          "total_inodes": "4161536",
+          "inodes_used": "93584",
+          "inodes_available": "4067952",
+          "inodes_percent_used": "3%",
+          "fs_type": "ext4",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "uuid": "9bd5526f-2cb8-45c2-9e6b-cbfe0a3f790c",
+          "devices": [
+            "/dev/mapper/ubuntu--vg-ubuntu--lv"
+          ]
+        },
+        "/dev/shm": {
+          "kb_size": "2013320",
+          "kb_used": "0",
+          "kb_available": "2013320",
+          "percent_used": "0%",
+          "total_inodes": "503330",
+          "inodes_used": "1",
+          "inodes_available": "503329",
+          "inodes_percent_used": "1%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev"
+          ],
+          "devices": [
+            "tmpfs"
+          ]
+        },
+        "/run/lock": {
+          "kb_size": "5120",
+          "kb_used": "0",
+          "kb_available": "5120",
+          "percent_used": "0%",
+          "total_inodes": "503330",
+          "inodes_used": "3",
+          "inodes_available": "503327",
+          "inodes_percent_used": "1%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "size=5120k"
+          ],
+          "devices": [
+            "tmpfs"
+          ]
+        },
+        "/sys/fs/cgroup": {
+          "kb_size": "4096",
+          "kb_used": "0",
+          "kb_available": "4096",
+          "percent_used": "0%",
+          "total_inodes": "1024",
+          "inodes_used": "18",
+          "inodes_available": "1006",
+          "inodes_percent_used": "2%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "ro",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "size=4096k",
+            "nr_inodes=1024",
+            "mode=755"
+          ],
+          "devices": [
+            "tmpfs"
+          ]
+        },
+        "/boot": {
+          "kb_size": "999320",
+          "kb_used": "115656",
+          "kb_available": "814852",
+          "percent_used": "13%",
+          "total_inodes": "65536",
+          "inodes_used": "312",
+          "inodes_available": "65224",
+          "inodes_percent_used": "1%",
+          "fs_type": "ext4",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "uuid": "e721692b-67d6-4630-8dfe-11cf118863d0",
+          "devices": [
+            "/dev/sda2"
+          ]
+        },
+        "/run/user/1000": {
+          "kb_size": "402664",
+          "kb_used": "4",
+          "kb_available": "402660",
+          "percent_used": "1%",
+          "total_inodes": "100666",
+          "inodes_used": "25",
+          "inodes_available": "100641",
+          "inodes_percent_used": "1%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "relatime",
+            "size=402664k",
+            "nr_inodes=100666",
+            "mode=700",
+            "uid=1000",
+            "gid=1000"
+          ],
+          "devices": [
+            "tmpfs"
+          ]
+        },
+        "/mnt/vagrant-mounts/1000-1000": {
+          "kb_size": "976760828",
+          "kb_used": "635338876",
+          "kb_available": "341421952",
+          "percent_used": "66%",
+          "fs_type": "fuse.vmhgfs-fuse",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "relatime",
+            "user_id=0",
+            "group_id=0",
+            "default_permissions",
+            "allow_other"
+          ],
+          "devices": [
+            "vmhgfs-fuse"
+          ]
+        },
+        "/sys": {
+          "fs_type": "sysfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "devices": [
+            "sysfs"
+          ]
+        },
+        "/proc": {
+          "fs_type": "proc",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "devices": [
+            "proc"
+          ]
+        },
+        "/dev": {
+          "fs_type": "devtmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "noexec",
+            "relatime",
+            "size=1965972k",
+            "nr_inodes=491493",
+            "mode=755"
+          ],
+          "devices": [
+            "udev"
+          ]
+        },
+        "/dev/pts": {
+          "fs_type": "devpts",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "noexec",
+            "relatime",
+            "gid=5",
+            "mode=620",
+            "ptmxmode=000"
+          ],
+          "devices": [
+            "devpts"
+          ]
+        },
+        "/sys/kernel/security": {
+          "fs_type": "securityfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "devices": [
+            "securityfs"
+          ]
+        },
+        "/sys/fs/cgroup/unified": {
+          "fs_type": "cgroup2",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "nsdelegate"
+          ],
+          "devices": [
+            "cgroup2"
+          ]
+        },
+        "/sys/fs/cgroup/systemd": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "xattr",
+            "name=systemd"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/pstore": {
+          "fs_type": "pstore",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "devices": [
+            "pstore"
+          ]
+        },
+        "/sys/fs/bpf": {
+          "fs_type": "bpf",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "mode=700"
+          ],
+          "devices": [
+            "none"
+          ]
+        },
+        "/sys/fs/cgroup/cpuset": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "cpuset"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/cgroup/memory": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "memory"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/cgroup/cpu,cpuacct": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "cpu",
+            "cpuacct"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/cgroup/perf_event": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "perf_event"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/cgroup/pids": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "pids"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/cgroup/blkio": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "blkio"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/cgroup/freezer": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "freezer"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/cgroup/hugetlb": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "hugetlb"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/cgroup/net_cls,net_prio": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "net_cls",
+            "net_prio"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/cgroup/devices": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "devices"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/sys/fs/cgroup/rdma": {
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "rdma"
+          ],
+          "devices": [
+            "cgroup"
+          ]
+        },
+        "/proc/sys/fs/binfmt_misc": {
+          "fs_type": "autofs",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "fd=28",
+            "pgrp=1",
+            "timeout=0",
+            "minproto=5",
+            "maxproto=5",
+            "direct",
+            "pipe_ino=18277"
+          ],
+          "devices": [
+            "systemd-1"
+          ]
+        },
+        "/dev/hugepages": {
+          "fs_type": "hugetlbfs",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "pagesize=2M"
+          ],
+          "devices": [
+            "hugetlbfs"
+          ]
+        },
+        "/dev/mqueue": {
+          "fs_type": "mqueue",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "devices": [
+            "mqueue"
+          ]
+        },
+        "/sys/kernel/debug": {
+          "fs_type": "debugfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "devices": [
+            "debugfs"
+          ]
+        },
+        "/sys/kernel/tracing": {
+          "fs_type": "tracefs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "devices": [
+            "tracefs"
+          ]
+        },
+        "/sys/fs/fuse/connections": {
+          "fs_type": "fusectl",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "devices": [
+            "fusectl"
+          ]
+        },
+        "/sys/kernel/config": {
+          "fs_type": "configfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ],
+          "devices": [
+            "configfs"
+          ]
+        },
+        "/snap/core18/1885": {
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ],
+          "devices": [
+            "/var/lib/snapd/snaps/core18_1885.snap",
+            "/dev/loop0"
+          ]
+        },
+        "/snap/lxd/17936": {
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ],
+          "devices": [
+            "/var/lib/snapd/snaps/lxd_17936.snap",
+            "/dev/loop1"
+          ]
+        },
+        "/snap/snapd/9721": {
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ],
+          "devices": [
+            "/var/lib/snapd/snaps/snapd_9721.snap",
+            "/dev/loop2"
+          ]
+        },
+        "/run/snapd/ns": {
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "size=402668k",
+            "mode=755"
+          ],
+          "devices": [
+            "tmpfs"
+          ]
+        },
+        "/snap/snapd/15177": {
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ],
+          "devices": [
+            "/var/lib/snapd/snaps/snapd_15177.snap",
+            "/dev/loop3"
+          ]
+        },
+        "/snap/core18/2344": {
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ],
+          "devices": [
+            "/var/lib/snapd/snaps/core18_2344.snap",
+            "/dev/loop4"
+          ]
+        },
+        "/tmp/vagrant-chef/087ac7020770bf16fc17e74c8d1b6af6/nodes": {
+          "fs_type": "fuse.vmhgfs-fuse",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "relatime",
+            "user_id=0",
+            "group_id=0",
+            "default_permissions",
+            "allow_other"
+          ],
+          "devices": [
+            "vmhgfs-fuse"
+          ]
+        },
+        "/tmp/vagrant-chef/e2c80f2aae1e103544a400740a4a9c16/cookbooks": {
+          "fs_type": "fuse.vmhgfs-fuse",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "relatime",
+            "user_id=0",
+            "group_id=0",
+            "default_permissions",
+            "allow_other"
+          ],
+          "devices": [
+            "vmhgfs-fuse"
+          ]
+        },
+        "/snap/core20/1376": {
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ],
+          "devices": [
+            "/var/lib/snapd/snaps/core20_1376.snap",
+            "/dev/loop5"
+          ]
+        },
+        "/snap/lxd/22678": {
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ],
+          "devices": [
+            "/var/lib/snapd/snaps/lxd_22678.snap",
+            "/dev/loop6"
+          ]
+        },
+        "/run/snapd/ns/lxd.mnt": {
+          "fs_type": "nsfs",
+          "mount_options": [
+            "rw"
+          ],
+          "devices": [
+            "nsfs"
+          ]
+        }
+      },
+      "by_pair": {
+        "tmpfs,/run": {
+          "device": "tmpfs",
+          "kb_size": "402668",
+          "kb_used": "1128",
+          "kb_available": "401540",
+          "percent_used": "1%",
+          "mount": "/run",
+          "total_inodes": "503330",
+          "inodes_used": "708",
+          "inodes_available": "502622",
+          "inodes_percent_used": "1%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "size=402668k",
+            "mode=755"
+          ]
+        },
+        "/dev/mapper/ubuntu--vg-ubuntu--lv,/": {
+          "device": "/dev/mapper/ubuntu--vg-ubuntu--lv",
+          "kb_size": "65277516",
+          "kb_used": "4981920",
+          "kb_available": "56949984",
+          "percent_used": "9%",
+          "mount": "/",
+          "total_inodes": "4161536",
+          "inodes_used": "93584",
+          "inodes_available": "4067952",
+          "inodes_percent_used": "3%",
+          "fs_type": "ext4",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "uuid": "9bd5526f-2cb8-45c2-9e6b-cbfe0a3f790c"
+        },
+        "tmpfs,/dev/shm": {
+          "device": "tmpfs",
+          "kb_size": "2013320",
+          "kb_used": "0",
+          "kb_available": "2013320",
+          "percent_used": "0%",
+          "mount": "/dev/shm",
+          "total_inodes": "503330",
+          "inodes_used": "1",
+          "inodes_available": "503329",
+          "inodes_percent_used": "1%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev"
+          ]
+        },
+        "tmpfs,/run/lock": {
+          "device": "tmpfs",
+          "kb_size": "5120",
+          "kb_used": "0",
+          "kb_available": "5120",
+          "percent_used": "0%",
+          "mount": "/run/lock",
+          "total_inodes": "503330",
+          "inodes_used": "3",
+          "inodes_available": "503327",
+          "inodes_percent_used": "1%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "size=5120k"
+          ]
+        },
+        "tmpfs,/sys/fs/cgroup": {
+          "device": "tmpfs",
+          "kb_size": "4096",
+          "kb_used": "0",
+          "kb_available": "4096",
+          "percent_used": "0%",
+          "mount": "/sys/fs/cgroup",
+          "total_inodes": "1024",
+          "inodes_used": "18",
+          "inodes_available": "1006",
+          "inodes_percent_used": "2%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "ro",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "size=4096k",
+            "nr_inodes=1024",
+            "mode=755"
+          ]
+        },
+        "/dev/sda2,/boot": {
+          "device": "/dev/sda2",
+          "kb_size": "999320",
+          "kb_used": "115656",
+          "kb_available": "814852",
+          "percent_used": "13%",
+          "mount": "/boot",
+          "total_inodes": "65536",
+          "inodes_used": "312",
+          "inodes_available": "65224",
+          "inodes_percent_used": "1%",
+          "fs_type": "ext4",
+          "mount_options": [
+            "rw",
+            "relatime"
+          ],
+          "uuid": "e721692b-67d6-4630-8dfe-11cf118863d0"
+        },
+        "tmpfs,/run/user/1000": {
+          "device": "tmpfs",
+          "kb_size": "402664",
+          "kb_used": "4",
+          "kb_available": "402660",
+          "percent_used": "1%",
+          "mount": "/run/user/1000",
+          "total_inodes": "100666",
+          "inodes_used": "25",
+          "inodes_available": "100641",
+          "inodes_percent_used": "1%",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "relatime",
+            "size=402664k",
+            "nr_inodes=100666",
+            "mode=700",
+            "uid=1000",
+            "gid=1000"
+          ]
+        },
+        "vmhgfs-fuse,/mnt/vagrant-mounts/1000-1000": {
+          "device": "vmhgfs-fuse",
+          "kb_size": "976760828",
+          "kb_used": "635338876",
+          "kb_available": "341421952",
+          "percent_used": "66%",
+          "mount": "/mnt/vagrant-mounts/1000-1000",
+          "fs_type": "fuse.vmhgfs-fuse",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "relatime",
+            "user_id=0",
+            "group_id=0",
+            "default_permissions",
+            "allow_other"
+          ]
+        },
+        "sysfs,/sys": {
+          "device": "sysfs",
+          "mount": "/sys",
+          "fs_type": "sysfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ]
+        },
+        "proc,/proc": {
+          "device": "proc",
+          "mount": "/proc",
+          "fs_type": "proc",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ]
+        },
+        "udev,/dev": {
+          "device": "udev",
+          "mount": "/dev",
+          "fs_type": "devtmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "noexec",
+            "relatime",
+            "size=1965972k",
+            "nr_inodes=491493",
+            "mode=755"
+          ]
+        },
+        "devpts,/dev/pts": {
+          "device": "devpts",
+          "mount": "/dev/pts",
+          "fs_type": "devpts",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "noexec",
+            "relatime",
+            "gid=5",
+            "mode=620",
+            "ptmxmode=000"
+          ]
+        },
+        "securityfs,/sys/kernel/security": {
+          "device": "securityfs",
+          "mount": "/sys/kernel/security",
+          "fs_type": "securityfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ]
+        },
+        "cgroup2,/sys/fs/cgroup/unified": {
+          "device": "cgroup2",
+          "mount": "/sys/fs/cgroup/unified",
+          "fs_type": "cgroup2",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "nsdelegate"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/systemd": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/systemd",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "xattr",
+            "name=systemd"
+          ]
+        },
+        "pstore,/sys/fs/pstore": {
+          "device": "pstore",
+          "mount": "/sys/fs/pstore",
+          "fs_type": "pstore",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ]
+        },
+        "none,/sys/fs/bpf": {
+          "device": "none",
+          "mount": "/sys/fs/bpf",
+          "fs_type": "bpf",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "mode=700"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/cpuset": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/cpuset",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "cpuset"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/memory": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/memory",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "memory"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/cpu,cpuacct": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/cpu,cpuacct",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "cpu",
+            "cpuacct"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/perf_event": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/perf_event",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "perf_event"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/pids": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/pids",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "pids"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/blkio": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/blkio",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "blkio"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/freezer": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/freezer",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "freezer"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/hugetlb": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/hugetlb",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "hugetlb"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/net_cls,net_prio": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/net_cls,net_prio",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "net_cls",
+            "net_prio"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/devices": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/devices",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "devices"
+          ]
+        },
+        "cgroup,/sys/fs/cgroup/rdma": {
+          "device": "cgroup",
+          "mount": "/sys/fs/cgroup/rdma",
+          "fs_type": "cgroup",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "rdma"
+          ]
+        },
+        "systemd-1,/proc/sys/fs/binfmt_misc": {
+          "device": "systemd-1",
+          "mount": "/proc/sys/fs/binfmt_misc",
+          "fs_type": "autofs",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "fd=28",
+            "pgrp=1",
+            "timeout=0",
+            "minproto=5",
+            "maxproto=5",
+            "direct",
+            "pipe_ino=18277"
+          ]
+        },
+        "hugetlbfs,/dev/hugepages": {
+          "device": "hugetlbfs",
+          "mount": "/dev/hugepages",
+          "fs_type": "hugetlbfs",
+          "mount_options": [
+            "rw",
+            "relatime",
+            "pagesize=2M"
+          ]
+        },
+        "mqueue,/dev/mqueue": {
+          "device": "mqueue",
+          "mount": "/dev/mqueue",
+          "fs_type": "mqueue",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ]
+        },
+        "debugfs,/sys/kernel/debug": {
+          "device": "debugfs",
+          "mount": "/sys/kernel/debug",
+          "fs_type": "debugfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ]
+        },
+        "tracefs,/sys/kernel/tracing": {
+          "device": "tracefs",
+          "mount": "/sys/kernel/tracing",
+          "fs_type": "tracefs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ]
+        },
+        "fusectl,/sys/fs/fuse/connections": {
+          "device": "fusectl",
+          "mount": "/sys/fs/fuse/connections",
+          "fs_type": "fusectl",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ]
+        },
+        "configfs,/sys/kernel/config": {
+          "device": "configfs",
+          "mount": "/sys/kernel/config",
+          "fs_type": "configfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime"
+          ]
+        },
+        "/var/lib/snapd/snaps/core18_1885.snap,/snap/core18/1885": {
+          "device": "/var/lib/snapd/snaps/core18_1885.snap",
+          "mount": "/snap/core18/1885",
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime",
+            "x-gdu.hide"
+          ]
+        },
+        "/var/lib/snapd/snaps/lxd_17936.snap,/snap/lxd/17936": {
+          "device": "/var/lib/snapd/snaps/lxd_17936.snap",
+          "mount": "/snap/lxd/17936",
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime",
+            "x-gdu.hide"
+          ]
+        },
+        "/var/lib/snapd/snaps/snapd_9721.snap,/snap/snapd/9721": {
+          "device": "/var/lib/snapd/snaps/snapd_9721.snap",
+          "mount": "/snap/snapd/9721",
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime",
+            "x-gdu.hide"
+          ]
+        },
+        "tmpfs,/run/snapd/ns": {
+          "device": "tmpfs",
+          "mount": "/run/snapd/ns",
+          "fs_type": "tmpfs",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "noexec",
+            "relatime",
+            "size=402668k",
+            "mode=755"
+          ]
+        },
+        "/var/lib/snapd/snaps/snapd_15177.snap,/snap/snapd/15177": {
+          "device": "/var/lib/snapd/snaps/snapd_15177.snap",
+          "mount": "/snap/snapd/15177",
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime",
+            "x-gdu.hide"
+          ]
+        },
+        "/var/lib/snapd/snaps/core18_2344.snap,/snap/core18/2344": {
+          "device": "/var/lib/snapd/snaps/core18_2344.snap",
+          "mount": "/snap/core18/2344",
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime",
+            "x-gdu.hide"
+          ]
+        },
+        "vmhgfs-fuse,/tmp/vagrant-chef/087ac7020770bf16fc17e74c8d1b6af6/nodes": {
+          "device": "vmhgfs-fuse",
+          "mount": "/tmp/vagrant-chef/087ac7020770bf16fc17e74c8d1b6af6/nodes",
+          "fs_type": "fuse.vmhgfs-fuse",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "relatime",
+            "user_id=0",
+            "group_id=0",
+            "default_permissions",
+            "allow_other"
+          ]
+        },
+        "vmhgfs-fuse,/tmp/vagrant-chef/e2c80f2aae1e103544a400740a4a9c16/cookbooks": {
+          "device": "vmhgfs-fuse",
+          "mount": "/tmp/vagrant-chef/e2c80f2aae1e103544a400740a4a9c16/cookbooks",
+          "fs_type": "fuse.vmhgfs-fuse",
+          "mount_options": [
+            "rw",
+            "nosuid",
+            "nodev",
+            "relatime",
+            "user_id=0",
+            "group_id=0",
+            "default_permissions",
+            "allow_other"
+          ]
+        },
+        "/var/lib/snapd/snaps/core20_1376.snap,/snap/core20/1376": {
+          "device": "/var/lib/snapd/snaps/core20_1376.snap",
+          "mount": "/snap/core20/1376",
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime",
+            "x-gdu.hide"
+          ]
+        },
+        "/var/lib/snapd/snaps/lxd_22678.snap,/snap/lxd/22678": {
+          "device": "/var/lib/snapd/snaps/lxd_22678.snap",
+          "mount": "/snap/lxd/22678",
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime",
+            "x-gdu.hide"
+          ]
+        },
+        "nsfs,/run/snapd/ns/lxd.mnt": {
+          "device": "nsfs",
+          "mount": "/run/snapd/ns/lxd.mnt",
+          "fs_type": "nsfs",
+          "mount_options": [
+            "rw"
+          ]
+        },
+        "/dev/loop0,": {
+          "device": "/dev/loop0",
+          "fs_type": "squashfs"
+        },
+        "/dev/loop1,": {
+          "device": "/dev/loop1",
+          "fs_type": "squashfs"
+        },
+        "/dev/loop2,": {
+          "device": "/dev/loop2",
+          "fs_type": "squashfs"
+        },
+        "/dev/loop3,": {
+          "device": "/dev/loop3",
+          "fs_type": "squashfs"
+        },
+        "/dev/loop4,": {
+          "device": "/dev/loop4",
+          "fs_type": "squashfs"
+        },
+        "/dev/loop5,": {
+          "device": "/dev/loop5",
+          "fs_type": "squashfs"
+        },
+        "/dev/loop6,": {
+          "device": "/dev/loop6",
+          "fs_type": "squashfs"
+        },
+        "/dev/sda,": {
+          "device": "/dev/sda"
+        },
+        "/dev/sda3,": {
+          "device": "/dev/sda3",
+          "fs_type": "LVM2_member",
+          "uuid": "fZnkkZ-TTqv-HmX0-JB2V-Hu93-PXyl-2zvfQ9"
+        },
+        "/dev/sda1,": {
+          "device": "/dev/sda1"
+        },
+        "/dev/sr0,": {
+          "device": "/dev/sr0"
+        },
+        "/dev/loop0,/snap/core18/1885": {
+          "device": "/dev/loop0",
+          "mount": "/snap/core18/1885",
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ]
+        },
+        "/dev/loop1,/snap/lxd/17936": {
+          "device": "/dev/loop1",
+          "mount": "/snap/lxd/17936",
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ]
+        },
+        "/dev/loop2,/snap/snapd/9721": {
+          "device": "/dev/loop2",
+          "mount": "/snap/snapd/9721",
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ]
+        },
+        "/dev/loop3,/snap/snapd/15177": {
+          "device": "/dev/loop3",
+          "mount": "/snap/snapd/15177",
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ]
+        },
+        "/dev/loop4,/snap/core18/2344": {
+          "device": "/dev/loop4",
+          "mount": "/snap/core18/2344",
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ]
+        },
+        "/dev/loop5,/snap/core20/1376": {
+          "device": "/dev/loop5",
+          "mount": "/snap/core20/1376",
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ]
+        },
+        "/dev/loop6,/snap/lxd/22678": {
+          "device": "/dev/loop6",
+          "mount": "/snap/lxd/22678",
+          "fs_type": "squashfs",
+          "mount_options": [
+            "ro",
+            "nodev",
+            "relatime"
+          ]
+        }
+      }
+    },
+    "fips": {
+      "kernel": {
+        "enabled": true
+      }
+    },
+    "init_package": "systemd",
+    "keys": {
+      "ssh": {
+        "host_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABgQDekRzqiGQEYNOnKFvXxqU/7D1lL0pErEEdRnhRAzjaJ5sivLd+jYnV/gGjFJAsYJYW3SPEcF9oEd/ez1oO3r6YZkmScdt3FO5x+yUkHdfGSA4uFa2lgWJuQ9p2OWvrLra8rSIfFr17Vmrk5BC30E4OsX5VVYWtJo9xgOXE4z//qKZt6uAtPrWXcA6L2X/4WVazGVmDHNxijsTN3qF68a7xbKhq+tUIC7zgRRa+MI/1tsTHU4GqfOEJYxHZ32dTuHA2sT/syg1YQEACsAwlQppbrRtx41jGJvV1cKLvLc44za/Gip+xL16cV+1dhZjiZE7d9ctcAT+d45CO37/PNnJNha3AQ1YfScRatlc7G/aBWjzbj+T5yaHNRj/nNdSyaPWXXHo/W4dWGzsZeTyCXYvzVWHo4VjSv9jAXd98/TL3KAwav6Gm1Wx20sGOLo0rLmNOrUcLqtm9vJsuTSWhqMNp1zrfNTbuqmQORqIL4nAHZkRQHTAu15hJVoDHo0TtUmU=",
+        "host_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOt/iOBFyOUngE/bYCkW2swkgv0x1E6FcD4ZVayDDQULwnVCPgyB6nrCXu0jj2jrmK2r7/mv7WSiUoCD3hHkCLs=",
+        "host_ecdsa_type": "ecdsa-sha2-nistp256",
+        "host_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIHYq+RBQXsGIc5EuUdHqQv2k/0EpMhXIKj3Zgsxqfpd7"
+      }
+    },
+    "block_device": {
+      "dm-0": {
+        "size": "133169152",
+        "removable": "0",
+        "rotational": "1",
+        "physical_block_size": "512",
+        "logical_block_size": "512"
+      },
+      "loop0": {
+        "size": "113296",
+        "removable": "0",
+        "rotational": "1",
+        "physical_block_size": "512",
+        "logical_block_size": "512"
+      },
+      "loop1": {
+        "size": "141640",
+        "removable": "0",
+        "rotational": "1",
+        "physical_block_size": "512",
+        "logical_block_size": "512"
+      },
+      "loop2": {
+        "size": "63360",
+        "removable": "0",
+        "rotational": "1",
+        "physical_block_size": "512",
+        "logical_block_size": "512"
+      },
+      "loop3": {
+        "size": "89352",
+        "removable": "0",
+        "rotational": "1",
+        "physical_block_size": "512",
+        "logical_block_size": "512"
+      },
+      "loop4": {
+        "size": "113696",
+        "removable": "0",
+        "rotational": "1",
+        "physical_block_size": "512",
+        "logical_block_size": "512"
+      },
+      "loop5": {
+        "size": "126760",
+        "removable": "0",
+        "rotational": "1",
+        "physical_block_size": "512",
+        "logical_block_size": "512"
+      },
+      "loop6": {
+        "size": "161432",
+        "removable": "0",
+        "rotational": "1",
+        "physical_block_size": "512",
+        "logical_block_size": "512"
+      },
+      "loop7": {
+        "size": "0",
+        "removable": "0",
+        "rotational": "1",
+        "physical_block_size": "512",
+        "logical_block_size": "512"
+      },
+      "sda": {
+        "size": "268435456",
+        "removable": "0",
+        "model": "VMware Virtual S",
+        "rev": "1.0",
+        "state": "running",
+        "timeout": "180",
+        "vendor": "VMware,",
+        "queue_depth": "32",
+        "rotational": "1",
+        "physical_block_size": "512",
+        "logical_block_size": "512"
+      },
+      "sr0": {
+        "size": "2097151",
+        "removable": "1",
+        "model": "VMware IDE CDR00",
+        "rev": "1.00",
+        "state": "running",
+        "timeout": "30",
+        "vendor": "NECVMWar",
+        "queue_depth": "1",
+        "rotational": "1",
+        "physical_block_size": "512",
+        "logical_block_size": "512"
+      }
+    },
+    "hostnamectl": {
+      "static_hostname": "chef",
+      "icon_name": "computer-vm",
+      "chassis": "vm",
+      "machine_id": "a333e5e6d7b94cb698f9c08dab429bd7",
+      "boot_id": "eab660bae9d24616be809b47e6edd8f6",
+      "virtualization": "vmware",
+      "operating_system": "Ubuntu 20.10",
+      "kernel": "Linux 5.8.0-63-generic",
+      "architecture": "x86-64"
+    },
+    "machine_id": "a333e5e6d7b94cb698f9c08dab429bd7",
+    "os_release": {
+      "name": "Ubuntu",
+      "version": "20.10 (Groovy Gorilla)",
+      "id": "ubuntu",
+      "id_like": [
+        "debian"
+      ],
+      "pretty_name": "Ubuntu 20.10",
+      "version_id": "20.10",
+      "home_url": "https://www.ubuntu.com/",
+      "support_url": "https://help.ubuntu.com/",
+      "bug_report_url": "https://bugs.launchpad.net/ubuntu/",
+      "privacy_policy_url": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
+      "version_codename": "groovy",
+      "ubuntu_codename": "groovy"
+    },
+    "systemd_paths": {
+      "temporary": "/tmp",
+      "temporary-large": "/var/tmp",
+      "system-binaries": "/usr/bin",
+      "system-include": "/usr/include",
+      "system-library-private": "/usr/lib",
+      "system-library-arch": "/usr/lib/x86_64-linux-gnu",
+      "system-shared": "/usr/share",
+      "system-configuration-factory": "/usr/share/factory/etc",
+      "system-state-factory": "/usr/share/factory/var",
+      "system-configuration": "/etc",
+      "system-runtime": "/run",
+      "system-runtime-logs": "/run/log",
+      "system-state-private": "/var/lib",
+      "system-state-logs": "/var/log",
+      "system-state-cache": "/var/cache",
+      "system-state-spool": "/var/spool",
+      "user-binaries": "/root/.local/bin",
+      "user-library-private": "/root/.local/lib",
+      "user-library-arch": "/root/.local/lib/x86_64-linux-gnu",
+      "user-shared": "/root/.local/share",
+      "user-configuration": "/root/.config",
+      "user-runtime": "/run/user/1000",
+      "user-state-cache": "/root/.cache",
+      "user": "/root",
+      "user-documents": "/root",
+      "user-music": "/root",
+      "user-pictures": "/root",
+      "user-videos": "/root",
+      "user-download": "/root",
+      "user-public": "/root",
+      "user-templates": "/root",
+      "user-desktop": "/root/Desktop",
+      "search-binaries": "/opt/chef/embedded/bin",
+      "search-binaries-default": "/usr/local/sbin",
+      "search-library-private": "/root/.local/lib",
+      "search-library-arch": "/root/.local/lib/x86_64-linux-gnu",
+      "search-shared": "/root/.local/share",
+      "search-configuration-factory": "/usr/local/share/factory/etc",
+      "search-state-factory": "/usr/local/share/factory/var",
+      "search-configuration": "/root/.config",
+      "systemd-util": "/lib/systemd",
+      "systemd-system-unit": "/etc/systemd/system.control",
+      "systemd-system-preset": "/lib/systemd/system-preset",
+      "systemd-system-conf": "/etc/systemd/system",
+      "systemd-user-unit": "/root/.config/systemd/user.control",
+      "systemd-user-preset": "/lib/systemd/user-preset",
+      "systemd-user-conf": "/etc/systemd/user",
+      "systemd-system-generator": "/run/systemd/system-generators",
+      "systemd-user-generator": "/run/systemd/user-generators",
+      "systemd-sleep": "/lib/systemd/system-sleep",
+      "systemd-shutdown": "/lib/systemd/system-shutdown",
+      "tmpfiles": "/usr/lib/tmpfiles.d",
+      "sysusers": "/lib/sysusers.d",
+      "sysctl": "/lib/sysctl.d",
+      "binfmt": "/lib/binfmt.d",
+      "modules-load": "/lib/modules-load.d",
+      "catalog": "/usr/lib/systemd/catalog",
+      "systemd-search-network": "/etc/systemd/network"
+    },
+    "ohai_time": 1647785753.1589696,
+    "packages": {
+      "accountsservice": {
+        "version": "0.6.55-0ubuntu13.2",
+        "arch": "amd64"
+      },
+      "adduser": {
+        "version": "3.118ubuntu2",
+        "arch": "all"
+      },
+      "alsa-topology-conf": {
+        "version": "1.2.3-1",
+        "arch": "all"
+      },
+      "alsa-ucm-conf": {
+        "version": "1.2.2-1ubuntu5.2",
+        "arch": "all"
+      },
+      "amd64-microcode": {
+        "version": "3.20191218.1ubuntu1",
+        "arch": "amd64"
+      },
+      "apparmor": {
+        "version": "3.0.0-0ubuntu1",
+        "arch": "amd64"
+      },
+      "apport": {
+        "version": "2.20.11-0ubuntu50.7",
+        "arch": "all"
+      },
+      "apport-symptoms": {
+        "version": "0.24",
+        "arch": "all"
+      },
+      "apt": {
+        "version": "2.1.10ubuntu0.3",
+        "arch": "amd64"
+      },
+      "apt-utils": {
+        "version": "2.1.10ubuntu0.3",
+        "arch": "amd64"
+      },
+      "at": {
+        "version": "3.1.23-1ubuntu2",
+        "arch": "amd64"
+      },
+      "base-files": {
+        "version": "11ubuntu14",
+        "arch": "amd64"
+      },
+      "base-passwd": {
+        "version": "3.5.47",
+        "arch": "amd64"
+      },
+      "bash": {
+        "version": "5.0-6ubuntu2",
+        "arch": "amd64"
+      },
+      "bash-completion": {
+        "version": "1:2.11-2ubuntu1",
+        "arch": "all"
+      },
+      "bc": {
+        "version": "1.07.1-2build2",
+        "arch": "amd64"
+      },
+      "bcache-tools": {
+        "version": "1.0.8-4ubuntu1",
+        "arch": "amd64"
+      },
+      "bind9-dnsutils": {
+        "version": "1:9.16.6-3ubuntu1.2",
+        "arch": "amd64"
+      },
+      "bind9-host": {
+        "version": "1:9.16.6-3ubuntu1.2",
+        "arch": "amd64"
+      },
+      "bind9-libs": {
+        "version": "1:9.16.6-3ubuntu1.2",
+        "arch": "amd64"
+      },
+      "bolt": {
+        "version": "0.9-1",
+        "arch": "amd64"
+      },
+      "bsdextrautils": {
+        "version": "2.36-3ubuntu1",
+        "arch": "amd64"
+      },
+      "bsdutils": {
+        "version": "1:2.36-3ubuntu1",
+        "arch": "amd64"
+      },
+      "btrfs-progs": {
+        "version": "5.7-1",
+        "arch": "amd64"
+      },
+      "busybox-initramfs": {
+        "version": "1:1.30.1-4ubuntu9.1",
+        "arch": "amd64"
+      },
+      "busybox-static": {
+        "version": "1:1.30.1-4ubuntu9.1",
+        "arch": "amd64"
+      },
+      "byobu": {
+        "version": "5.133-0ubuntu1",
+        "arch": "all"
+      },
+      "bzip2": {
+        "version": "1.0.8-4ubuntu2",
+        "arch": "amd64"
+      },
+      "ca-certificates": {
+        "version": "20210119~20.10.1",
+        "arch": "all"
+      },
+      "chef": {
+        "version": "17.9.52-1",
+        "arch": "amd64"
+      },
+      "cloud-guest-utils": {
+        "version": "0.31-29-ge0792e3d-0ubuntu1",
+        "arch": "all"
+      },
+      "cloud-initramfs-copymods": {
+        "version": "0.47ubuntu1",
+        "arch": "all"
+      },
+      "cloud-initramfs-dyn-netconf": {
+        "version": "0.47ubuntu1",
+        "arch": "all"
+      },
+      "command-not-found": {
+        "version": "20.10.1",
+        "arch": "all"
+      },
+      "console-setup": {
+        "version": "1.195ubuntu2",
+        "arch": "all"
+      },
+      "console-setup-linux": {
+        "version": "1.195ubuntu2",
+        "arch": "all"
+      },
+      "coreutils": {
+        "version": "8.32-3ubuntu1",
+        "arch": "amd64"
+      },
+      "cpio": {
+        "version": "2.13+dfsg-3",
+        "arch": "amd64"
+      },
+      "crda": {
+        "version": "4.14+git20191112.9856751-1",
+        "arch": "amd64"
+      },
+      "cron": {
+        "version": "3.0pl1-136ubuntu1",
+        "arch": "amd64"
+      },
+      "cryptsetup": {
+        "version": "2:2.3.3-1ubuntu6",
+        "arch": "amd64"
+      },
+      "cryptsetup-bin": {
+        "version": "2:2.3.3-1ubuntu6",
+        "arch": "amd64"
+      },
+      "cryptsetup-initramfs": {
+        "version": "2:2.3.3-1ubuntu6",
+        "arch": "all"
+      },
+      "cryptsetup-run": {
+        "version": "2:2.3.3-1ubuntu6",
+        "arch": "all"
+      },
+      "curl": {
+        "version": "7.68.0-1ubuntu4.3",
+        "arch": "amd64"
+      },
+      "dash": {
+        "version": "0.5.10.2-7",
+        "arch": "amd64"
+      },
+      "dbus": {
+        "version": "1.12.20-1ubuntu1",
+        "arch": "amd64"
+      },
+      "dbus-user-session": {
+        "version": "1.12.20-1ubuntu1",
+        "arch": "amd64"
+      },
+      "dconf-gsettings-backend": {
+        "version": "0.38.0-1",
+        "arch": "amd64"
+      },
+      "dconf-service": {
+        "version": "0.38.0-1",
+        "arch": "amd64"
+      },
+      "debconf": {
+        "version": "1.5.74",
+        "arch": "all"
+      },
+      "debconf-i18n": {
+        "version": "1.5.74",
+        "arch": "all"
+      },
+      "debianutils": {
+        "version": "4.11.2",
+        "arch": "amd64"
+      },
+      "diffutils": {
+        "version": "1:3.7-3ubuntu1",
+        "arch": "amd64"
+      },
+      "dirmngr": {
+        "version": "2.2.20-1ubuntu1.1",
+        "arch": "amd64"
+      },
+      "distro-info": {
+        "version": "0.23ubuntu1",
+        "arch": "amd64"
+      },
+      "distro-info-data": {
+        "version": "0.44ubuntu1.5",
+        "arch": "all"
+      },
+      "dmeventd": {
+        "version": "2:1.02.167-1ubuntu3",
+        "arch": "amd64"
+      },
+      "dmidecode": {
+        "version": "3.2-3",
+        "arch": "amd64"
+      },
+      "dmsetup": {
+        "version": "2:1.02.167-1ubuntu3",
+        "arch": "amd64"
+      },
+      "dosfstools": {
+        "version": "4.1-2build1",
+        "arch": "amd64"
+      },
+      "dpkg": {
+        "version": "1.20.5ubuntu2",
+        "arch": "amd64"
+      },
+      "e2fsprogs": {
+        "version": "1.45.6-1ubuntu1",
+        "arch": "amd64"
+      },
+      "ed": {
+        "version": "1.16-1",
+        "arch": "amd64"
+      },
+      "eject": {
+        "version": "2.36-3ubuntu1",
+        "arch": "amd64"
+      },
+      "ethtool": {
+        "version": "1:5.8-1",
+        "arch": "amd64"
+      },
+      "fdisk": {
+        "version": "2.36-3ubuntu1",
+        "arch": "amd64"
+      },
+      "file": {
+        "version": "1:5.38-5",
+        "arch": "amd64"
+      },
+      "finalrd": {
+        "version": "6",
+        "arch": "all"
+      },
+      "findutils": {
+        "version": "4.7.0-1ubuntu2",
+        "arch": "amd64"
+      },
+      "fonts-lato": {
+        "version": "2.0-2",
+        "arch": "all"
+      },
+      "fonts-ubuntu-console": {
+        "version": "0.83-4ubuntu1",
+        "arch": "all"
+      },
+      "friendly-recovery": {
+        "version": "0.2.41ubuntu0.20.10.1",
+        "arch": "all"
+      },
+      "ftp": {
+        "version": "0.17-34.1.1",
+        "arch": "amd64"
+      },
+      "fuse": {
+        "version": "2.9.9-3",
+        "arch": "amd64"
+      },
+      "fwupd": {
+        "version": "1.4.7-0~20.10.2",
+        "arch": "amd64"
+      },
+      "fwupd-signed": {
+        "version": "1.30.2+1.4.7-0~20.10.2",
+        "arch": "amd64"
+      },
+      "gawk": {
+        "version": "1:5.0.1+dfsg-1",
+        "arch": "amd64"
+      },
+      "gcc-10-base": {
+        "version": "10.3.0-1ubuntu1~20.10",
+        "arch": "amd64"
+      },
+      "gdisk": {
+        "version": "1.0.5-1",
+        "arch": "amd64"
+      },
+      "gettext-base": {
+        "version": "0.19.8.1-10build1",
+        "arch": "amd64"
+      },
+      "gir1.2-glib-2.0": {
+        "version": "1.66.1-1",
+        "arch": "amd64"
+      },
+      "gir1.2-packagekitglib-1.0": {
+        "version": "1.1.13-2ubuntu2",
+        "arch": "amd64"
+      },
+      "git": {
+        "version": "1:2.27.0-1ubuntu1.1",
+        "arch": "amd64"
+      },
+      "git-man": {
+        "version": "1:2.27.0-1ubuntu1.1",
+        "arch": "all"
+      },
+      "glib-networking": {
+        "version": "2.66.0-2",
+        "arch": "amd64"
+      },
+      "glib-networking-common": {
+        "version": "2.66.0-2",
+        "arch": "all"
+      },
+      "glib-networking-services": {
+        "version": "2.66.0-2",
+        "arch": "amd64"
+      },
+      "gnupg": {
+        "version": "2.2.20-1ubuntu1.1",
+        "arch": "all"
+      },
+      "gnupg-l10n": {
+        "version": "2.2.20-1ubuntu1.1",
+        "arch": "all"
+      },
+      "gnupg-utils": {
+        "version": "2.2.20-1ubuntu1.1",
+        "arch": "amd64"
+      },
+      "gpg": {
+        "version": "2.2.20-1ubuntu1.1",
+        "arch": "amd64"
+      },
+      "gpg-agent": {
+        "version": "2.2.20-1ubuntu1.1",
+        "arch": "amd64"
+      },
+      "gpg-wks-client": {
+        "version": "2.2.20-1ubuntu1.1",
+        "arch": "amd64"
+      },
+      "gpg-wks-server": {
+        "version": "2.2.20-1ubuntu1.1",
+        "arch": "amd64"
+      },
+      "gpgconf": {
+        "version": "2.2.20-1ubuntu1.1",
+        "arch": "amd64"
+      },
+      "gpgsm": {
+        "version": "2.2.20-1ubuntu1.1",
+        "arch": "amd64"
+      },
+      "gpgv": {
+        "version": "2.2.20-1ubuntu1.1",
+        "arch": "amd64"
+      },
+      "grep": {
+        "version": "3.4-1",
+        "arch": "amd64"
+      },
+      "groff-base": {
+        "version": "1.22.4-5",
+        "arch": "amd64"
+      },
+      "grub-common": {
+        "version": "2.04-1ubuntu35.6",
+        "arch": "amd64"
+      },
+      "grub-gfxpayload-lists": {
+        "version": "0.7",
+        "arch": "amd64"
+      },
+      "grub-pc": {
+        "version": "2.04-1ubuntu35.6",
+        "arch": "amd64"
+      },
+      "grub-pc-bin": {
+        "version": "2.04-1ubuntu35.6",
+        "arch": "amd64"
+      },
+      "grub2-common": {
+        "version": "2.04-1ubuntu35.6",
+        "arch": "amd64"
+      },
+      "gsettings-desktop-schemas": {
+        "version": "3.38.0-1ubuntu1",
+        "arch": "all"
+      },
+      "gzip": {
+        "version": "1.10-2ubuntu1.1",
+        "arch": "amd64"
+      },
+      "haveged": {
+        "version": "1.9.8-4ubuntu3",
+        "arch": "amd64"
+      },
+      "hdparm": {
+        "version": "9.58+ds-5",
+        "arch": "amd64"
+      },
+      "hostname": {
+        "version": "3.23",
+        "arch": "amd64"
+      },
+      "htop": {
+        "version": "3.0.2-1",
+        "arch": "amd64"
+      },
+      "ifplugd": {
+        "version": "0.28-19.5",
+        "arch": "amd64"
+      },
+      "ifupdown": {
+        "version": "0.8.35ubuntu2",
+        "arch": "amd64"
+      },
+      "info": {
+        "version": "6.7.0.dfsg.2-5",
+        "arch": "amd64"
+      },
+      "init": {
+        "version": "1.58",
+        "arch": "amd64"
+      },
+      "init-system-helpers": {
+        "version": "1.58",
+        "arch": "all"
+      },
+      "initramfs-tools": {
+        "version": "0.137ubuntu12.1",
+        "arch": "all"
+      },
+      "initramfs-tools-bin": {
+        "version": "0.137ubuntu12.1",
+        "arch": "amd64"
+      },
+      "initramfs-tools-core": {
+        "version": "0.137ubuntu12.1",
+        "arch": "all"
+      },
+      "install-info": {
+        "version": "6.7.0.dfsg.2-5",
+        "arch": "amd64"
+      },
+      "intel-microcode": {
+        "version": "3.20210608.0ubuntu0.20.10.1",
+        "arch": "amd64"
+      },
+      "iproute2": {
+        "version": "5.7.0-1ubuntu1",
+        "arch": "amd64"
+      },
+      "iptables": {
+        "version": "1.8.5-3ubuntu2.20.10.2",
+        "arch": "amd64"
+      },
+      "iputils-ping": {
+        "version": "3:20200821-2",
+        "arch": "amd64"
+      },
+      "iputils-tracepath": {
+        "version": "3:20200821-2",
+        "arch": "amd64"
+      },
+      "irqbalance": {
+        "version": "1.7.0-1",
+        "arch": "amd64"
+      },
+      "isc-dhcp-client": {
+        "version": "4.4.1-2.1ubuntu10.1",
+        "arch": "amd64"
+      },
+      "isc-dhcp-common": {
+        "version": "4.4.1-2.1ubuntu10.1",
+        "arch": "amd64"
+      },
+      "iso-codes": {
+        "version": "4.5.0-1",
+        "arch": "all"
+      },
+      "iucode-tool": {
+        "version": "2.3.1-1",
+        "arch": "amd64"
+      },
+      "iw": {
+        "version": "5.8-1",
+        "arch": "amd64"
+      },
+      "javascript-common": {
+        "version": "11",
+        "arch": "all"
+      },
+      "kbd": {
+        "version": "2.0.4-4ubuntu4",
+        "arch": "amd64"
+      },
+      "keyboard-configuration": {
+        "version": "1.195ubuntu2",
+        "arch": "all"
+      },
+      "klibc-utils": {
+        "version": "2.0.7-1ubuntu6",
+        "arch": "amd64"
+      },
+      "kmod": {
+        "version": "27+20200310-2ubuntu1",
+        "arch": "amd64"
+      },
+      "kpartx": {
+        "version": "0.8.4-4ubuntu2",
+        "arch": "amd64"
+      },
+      "landscape-common": {
+        "version": "19.12-0ubuntu5.1",
+        "arch": "amd64"
+      },
+      "language-selector-common": {
+        "version": "0.211",
+        "arch": "all"
+      },
+      "less": {
+        "version": "551-2",
+        "arch": "amd64"
+      },
+      "libaccountsservice0": {
+        "version": "0.6.55-0ubuntu13.2",
+        "arch": "amd64"
+      },
+      "libacl1": {
+        "version": "2.2.53-8",
+        "arch": "amd64"
+      },
+      "libaio1": {
+        "version": "0.3.112-8",
+        "arch": "amd64"
+      },
+      "libapparmor1": {
+        "version": "3.0.0-0ubuntu1",
+        "arch": "amd64"
+      },
+      "libappstream4": {
+        "version": "0.12.11-1",
+        "arch": "amd64"
+      },
+      "libapt-pkg6.0": {
+        "version": "2.1.10ubuntu0.3",
+        "arch": "amd64"
+      },
+      "libarchive13": {
+        "version": "3.4.3-2",
+        "arch": "amd64"
+      },
+      "libargon2-1": {
+        "version": "0~20171227-0.2build20.10.0",
+        "arch": "amd64"
+      },
+      "libasn1-8-heimdal": {
+        "version": "7.7.0+dfsg-2",
+        "arch": "amd64"
+      },
+      "libasound2": {
+        "version": "1.2.3.2-1ubuntu3.2",
+        "arch": "amd64"
+      },
+      "libasound2-data": {
+        "version": "1.2.3.2-1ubuntu3.2",
+        "arch": "all"
+      },
+      "libassuan0": {
+        "version": "2.5.3-7.1",
+        "arch": "amd64"
+      },
+      "libatm1": {
+        "version": "1:2.5.1-4",
+        "arch": "amd64"
+      },
+      "libattr1": {
+        "version": "1:2.4.48-5",
+        "arch": "amd64"
+      },
+      "libaudit-common": {
+        "version": "1:2.8.5-3ubuntu1",
+        "arch": "all"
+      },
+      "libaudit1": {
+        "version": "1:2.8.5-3ubuntu1",
+        "arch": "amd64"
+      },
+      "libblkid1": {
+        "version": "2.36-3ubuntu1",
+        "arch": "amd64"
+      },
+      "libbrotli1": {
+        "version": "1.0.9-2",
+        "arch": "amd64"
+      },
+      "libbsd0": {
+        "version": "0.10.0-1",
+        "arch": "amd64"
+      },
+      "libbz2-1.0": {
+        "version": "1.0.8-4ubuntu2",
+        "arch": "amd64"
+      },
+      "libc-bin": {
+        "version": "2.32-0ubuntu3",
+        "arch": "amd64"
+      },
+      "libc6": {
+        "version": "2.32-0ubuntu3",
+        "arch": "amd64"
+      },
+      "libcanberra0": {
+        "version": "0.30-7ubuntu2",
+        "arch": "amd64"
+      },
+      "libcap-ng0": {
+        "version": "0.7.9-2.2",
+        "arch": "amd64"
+      },
+      "libcap2": {
+        "version": "1:2.43-1",
+        "arch": "amd64"
+      },
+      "libcap2-bin": {
+        "version": "1:2.43-1",
+        "arch": "amd64"
+      },
+      "libcbor0.6": {
+        "version": "0.6.0-0ubuntu3",
+        "arch": "amd64"
+      },
+      "libcom-err2": {
+        "version": "1.45.6-1ubuntu1",
+        "arch": "amd64"
+      },
+      "libcrypt1": {
+        "version": "1:4.4.16-1ubuntu1",
+        "arch": "amd64"
+      },
+      "libcryptsetup12": {
+        "version": "2:2.3.3-1ubuntu6",
+        "arch": "amd64"
+      },
+      "libcurl3-gnutls": {
+        "version": "7.68.0-1ubuntu4.3",
+        "arch": "amd64"
+      },
+      "libcurl4": {
+        "version": "7.68.0-1ubuntu4.3",
+        "arch": "amd64"
+      },
+      "libdaemon0": {
+        "version": "0.14-7",
+        "arch": "amd64"
+      },
+      "libdb5.3": {
+        "version": "5.3.28+dfsg1-0.6ubuntu3",
+        "arch": "amd64"
+      },
+      "libdbus-1-3": {
+        "version": "1.12.20-1ubuntu1",
+        "arch": "amd64"
+      },
+      "libdbus-glib-1-2": {
+        "version": "0.110-5fakssync1",
+        "arch": "amd64"
+      },
+      "libdconf1": {
+        "version": "0.38.0-1",
+        "arch": "amd64"
+      },
+      "libdebconfclient0": {
+        "version": "0.252ubuntu1",
+        "arch": "amd64"
+      },
+      "libdevmapper-event1.02.1": {
+        "version": "2:1.02.167-1ubuntu3",
+        "arch": "amd64"
+      },
+      "libdevmapper1.02.1": {
+        "version": "2:1.02.167-1ubuntu3",
+        "arch": "amd64"
+      },
+      "libdns-export1110": {
+        "version": "1:9.11.19+dfsg-1ubuntu1",
+        "arch": "amd64"
+      },
+      "libdrm-common": {
+        "version": "2.4.102-1ubuntu1",
+        "arch": "all"
+      },
+      "libdrm2": {
+        "version": "2.4.102-1ubuntu1",
+        "arch": "amd64"
+      },
+      "libdumbnet1": {
+        "version": "1.12-9build1",
+        "arch": "amd64"
+      },
+      "libdw1": {
+        "version": "0.181-1ubuntu0.1",
+        "arch": "amd64"
+      },
+      "libedit2": {
+        "version": "3.1-20191231-1",
+        "arch": "amd64"
+      },
+      "libefiboot1": {
+        "version": "37-5ubuntu1",
+        "arch": "amd64"
+      },
+      "libefivar1": {
+        "version": "37-5ubuntu1",
+        "arch": "amd64"
+      },
+      "libelf1": {
+        "version": "0.181-1ubuntu0.1",
+        "arch": "amd64"
+      },
+      "liberror-perl": {
+        "version": "0.17029-1",
+        "arch": "all"
+      },
+      "libestr0": {
+        "version": "0.1.10-2.1build1",
+        "arch": "amd64"
+      },
+      "libevdev2": {
+        "version": "1.9.1+dfsg-1ubuntu0.1",
+        "arch": "amd64"
+      },
+      "libevent-2.1-7": {
+        "version": "2.1.12-stable-1",
+        "arch": "amd64"
+      },
+      "libexpat1": {
+        "version": "2.2.9-1build1",
+        "arch": "amd64"
+      },
+      "libext2fs2": {
+        "version": "1.45.6-1ubuntu1",
+        "arch": "amd64"
+      },
+      "libfastjson4": {
+        "version": "0.99.8-2build1",
+        "arch": "amd64"
+      },
+      "libfdisk1": {
+        "version": "2.36-3ubuntu1",
+        "arch": "amd64"
+      },
+      "libffi8ubuntu1": {
+        "version": "3.4~20200819gead65ca871-0ubuntu3",
+        "arch": "amd64"
+      },
+      "libfido2-1": {
+        "version": "1.4.0-2",
+        "arch": "amd64"
+      },
+      "libfl2": {
+        "version": "2.6.4-8",
+        "arch": "amd64"
+      },
+      "libfreetype6": {
+        "version": "2.10.2+dfsg-3ubuntu1",
+        "arch": "amd64"
+      },
+      "libfribidi0": {
+        "version": "1.0.8-2",
+        "arch": "amd64"
+      },
+      "libfuse2": {
+        "version": "2.9.9-3",
+        "arch": "amd64"
+      },
+      "libfwupd2": {
+        "version": "1.4.7-0~20.10.2",
+        "arch": "amd64"
+      },
+      "libfwupdplugin1": {
+        "version": "1.4.7-0~20.10.2",
+        "arch": "amd64"
+      },
+      "libgcab-1.0-0": {
+        "version": "1.4-2",
+        "arch": "amd64"
+      },
+      "libgcc-s1": {
+        "version": "10.3.0-1ubuntu1~20.10",
+        "arch": "amd64"
+      },
+      "libgcrypt20": {
+        "version": "1.8.5-5ubuntu2",
+        "arch": "amd64"
+      },
+      "libgdbm-compat4": {
+        "version": "1.18.1-5.1",
+        "arch": "amd64"
+      },
+      "libgdbm6": {
+        "version": "1.18.1-5.1",
+        "arch": "amd64"
+      },
+      "libgirepository-1.0-1": {
+        "version": "1.66.1-1",
+        "arch": "amd64"
+      },
+      "libglib2.0-0": {
+        "version": "2.66.1-2ubuntu0.2",
+        "arch": "amd64"
+      },
+      "libglib2.0-bin": {
+        "version": "2.66.1-2ubuntu0.2",
+        "arch": "amd64"
+      },
+      "libglib2.0-data": {
+        "version": "2.66.1-2ubuntu0.2",
+        "arch": "all"
+      },
+      "libgmp10": {
+        "version": "2:6.2.0+dfsg-6ubuntu1",
+        "arch": "amd64"
+      },
+      "libgnutls30": {
+        "version": "3.6.15-4ubuntu2",
+        "arch": "amd64"
+      },
+      "libgpg-error0": {
+        "version": "1.38-2",
+        "arch": "amd64"
+      },
+      "libgpgme11": {
+        "version": "1.14.0-1ubuntu1",
+        "arch": "amd64"
+      },
+      "libgpm2": {
+        "version": "1.20.7-6",
+        "arch": "amd64"
+      },
+      "libgssapi-krb5-2": {
+        "version": "1.17-10ubuntu0.1",
+        "arch": "amd64"
+      },
+      "libgssapi3-heimdal": {
+        "version": "7.7.0+dfsg-2",
+        "arch": "amd64"
+      },
+      "libgstreamer1.0-0": {
+        "version": "1.18.0-3",
+        "arch": "amd64"
+      },
+      "libgudev-1.0-0": {
+        "version": "1:233-1",
+        "arch": "amd64"
+      },
+      "libgusb2": {
+        "version": "0.3.4-0.2",
+        "arch": "amd64"
+      },
+      "libhavege2": {
+        "version": "1.9.8-4ubuntu3",
+        "arch": "amd64"
+      },
+      "libhcrypto4-heimdal": {
+        "version": "7.7.0+dfsg-2",
+        "arch": "amd64"
+      },
+      "libheimbase1-heimdal": {
+        "version": "7.7.0+dfsg-2",
+        "arch": "amd64"
+      },
+      "libheimntlm0-heimdal": {
+        "version": "7.7.0+dfsg-2",
+        "arch": "amd64"
+      },
+      "libhogweed6": {
+        "version": "3.6-2ubuntu0.2",
+        "arch": "amd64"
+      },
+      "libhx509-5-heimdal": {
+        "version": "7.7.0+dfsg-2",
+        "arch": "amd64"
+      },
+      "libicu67": {
+        "version": "67.1-4",
+        "arch": "amd64"
+      },
+      "libidn2-0": {
+        "version": "2.3.0-1",
+        "arch": "amd64"
+      },
+      "libimobiledevice6": {
+        "version": "1.3.0-5",
+        "arch": "amd64"
+      },
+      "libip4tc2": {
+        "version": "1.8.5-3ubuntu2.20.10.2",
+        "arch": "amd64"
+      },
+      "libip6tc2": {
+        "version": "1.8.5-3ubuntu2.20.10.2",
+        "arch": "amd64"
+      },
+      "libisc-export1105": {
+        "version": "1:9.11.19+dfsg-1ubuntu1",
+        "arch": "amd64"
+      },
+      "libisns0": {
+        "version": "0.97-3build1",
+        "arch": "amd64"
+      },
+      "libjcat1": {
+        "version": "0.1.3-2",
+        "arch": "amd64"
+      },
+      "libjs-jquery": {
+        "version": "3.5.1+dfsg-4",
+        "arch": "all"
+      },
+      "libjson-c5": {
+        "version": "0.15-1",
+        "arch": "amd64"
+      },
+      "libjson-glib-1.0-0": {
+        "version": "1.6.0-1",
+        "arch": "amd64"
+      },
+      "libjson-glib-1.0-common": {
+        "version": "1.6.0-1",
+        "arch": "all"
+      },
+      "libk5crypto3": {
+        "version": "1.17-10ubuntu0.1",
+        "arch": "amd64"
+      },
+      "libkeyutils1": {
+        "version": "1.6.1-2ubuntu1",
+        "arch": "amd64"
+      },
+      "libklibc": {
+        "version": "2.0.7-1ubuntu6",
+        "arch": "amd64"
+      },
+      "libkmod2": {
+        "version": "27+20200310-2ubuntu1",
+        "arch": "amd64"
+      },
+      "libkrb5-26-heimdal": {
+        "version": "7.7.0+dfsg-2",
+        "arch": "amd64"
+      },
+      "libkrb5-3": {
+        "version": "1.17-10ubuntu0.1",
+        "arch": "amd64"
+      },
+      "libkrb5support0": {
+        "version": "1.17-10ubuntu0.1",
+        "arch": "amd64"
+      },
+      "libksba8": {
+        "version": "1.4.0-2",
+        "arch": "amd64"
+      },
+      "libldap-2.4-2": {
+        "version": "2.4.53+dfsg-1ubuntu1.4",
+        "arch": "amd64"
+      },
+      "libldap-common": {
+        "version": "2.4.53+dfsg-1ubuntu1.4",
+        "arch": "all"
+      },
+      "liblmdb0": {
+        "version": "0.9.24-1",
+        "arch": "amd64"
+      },
+      "liblocale-gettext-perl": {
+        "version": "1.07-4",
+        "arch": "amd64"
+      },
+      "libltdl7": {
+        "version": "2.4.6-14",
+        "arch": "amd64"
+      },
+      "liblua5.2-0": {
+        "version": "5.2.4-1.1build3",
+        "arch": "amd64"
+      },
+      "liblvm2cmd2.03": {
+        "version": "2.03.07-1ubuntu3",
+        "arch": "amd64"
+      },
+      "liblz4-1": {
+        "version": "1.9.2-2ubuntu0.20.10.1",
+        "arch": "amd64"
+      },
+      "liblzma5": {
+        "version": "5.2.4-1ubuntu1",
+        "arch": "amd64"
+      },
+      "liblzo2-2": {
+        "version": "2.10-2",
+        "arch": "amd64"
+      },
+      "libmagic-mgc": {
+        "version": "1:5.38-5",
+        "arch": "amd64"
+      },
+      "libmagic1": {
+        "version": "1:5.38-5",
+        "arch": "amd64"
+      },
+      "libmaxminddb0": {
+        "version": "1.4.2-0ubuntu1.20.10.1",
+        "arch": "amd64"
+      },
+      "libmnl0": {
+        "version": "1.0.4-3",
+        "arch": "amd64"
+      },
+      "libmount1": {
+        "version": "2.36-3ubuntu1",
+        "arch": "amd64"
+      },
+      "libmpfr6": {
+        "version": "4.1.0-3",
+        "arch": "amd64"
+      },
+      "libmspack0": {
+        "version": "0.10.1-2",
+        "arch": "amd64"
+      },
+      "libncurses6": {
+        "version": "6.2-1",
+        "arch": "amd64"
+      },
+      "libncursesw6": {
+        "version": "6.2-1",
+        "arch": "amd64"
+      },
+      "libnetfilter-conntrack3": {
+        "version": "1.0.8-1",
+        "arch": "amd64"
+      },
+      "libnetplan0": {
+        "version": "0.102-0ubuntu1~20.10.3",
+        "arch": "amd64"
+      },
+      "libnettle8": {
+        "version": "3.6-2ubuntu0.2",
+        "arch": "amd64"
+      },
+      "libnewt0.52": {
+        "version": "0.52.21-4ubuntu2",
+        "arch": "amd64"
+      },
+      "libnfnetlink0": {
+        "version": "1.0.1-3build1",
+        "arch": "amd64"
+      },
+      "libnftnl11": {
+        "version": "1.1.7-1",
+        "arch": "amd64"
+      },
+      "libnghttp2-14": {
+        "version": "1.41.0-3",
+        "arch": "amd64"
+      },
+      "libnl-3-200": {
+        "version": "3.4.0-1",
+        "arch": "amd64"
+      },
+      "libnl-genl-3-200": {
+        "version": "3.4.0-1",
+        "arch": "amd64"
+      },
+      "libnpth0": {
+        "version": "1.6-2",
+        "arch": "amd64"
+      },
+      "libnsl2": {
+        "version": "1.3.0-0ubuntu3",
+        "arch": "amd64"
+      },
+      "libnss-nis": {
+        "version": "3.1-0ubuntu4",
+        "arch": "amd64"
+      },
+      "libnss-nisplus": {
+        "version": "1.3-0ubuntu4",
+        "arch": "amd64"
+      },
+      "libnss-systemd": {
+        "version": "246.6-1ubuntu1.7",
+        "arch": "amd64"
+      },
+      "libntfs-3g883": {
+        "version": "1:2017.3.23AR.3-3ubuntu2",
+        "arch": "amd64"
+      },
+      "libnuma1": {
+        "version": "2.0.12-1build1",
+        "arch": "amd64"
+      },
+      "libogg0": {
+        "version": "1.3.4-0ubuntu1",
+        "arch": "amd64"
+      },
+      "libopeniscsiusr0.2.0": {
+        "version": "2.1.1-1ubuntu2.1",
+        "arch": "amd64"
+      },
+      "libp11-kit0": {
+        "version": "0.23.21-2ubuntu0.1",
+        "arch": "amd64"
+      },
+      "libpackagekit-glib2-18": {
+        "version": "1.1.13-2ubuntu2",
+        "arch": "amd64"
+      },
+      "libpam-cap": {
+        "version": "1:2.43-1",
+        "arch": "amd64"
+      },
+      "libpam-modules": {
+        "version": "1.3.1-5ubuntu6.20.10.1",
+        "arch": "amd64"
+      },
+      "libpam-modules-bin": {
+        "version": "1.3.1-5ubuntu6.20.10.1",
+        "arch": "amd64"
+      },
+      "libpam-runtime": {
+        "version": "1.3.1-5ubuntu6.20.10.1",
+        "arch": "all"
+      },
+      "libpam-systemd": {
+        "version": "246.6-1ubuntu1.7",
+        "arch": "amd64"
+      },
+      "libpam0g": {
+        "version": "1.3.1-5ubuntu6.20.10.1",
+        "arch": "amd64"
+      },
+      "libparted2": {
+        "version": "3.3-4ubuntu0.20.10.1",
+        "arch": "amd64"
+      },
+      "libpcap0.8": {
+        "version": "1.9.1-4",
+        "arch": "amd64"
+      },
+      "libpci3": {
+        "version": "1:3.7.0-2",
+        "arch": "amd64"
+      },
+      "libpcre2-8-0": {
+        "version": "10.34-7",
+        "arch": "amd64"
+      },
+      "libpcre3": {
+        "version": "2:8.39-13",
+        "arch": "amd64"
+      },
+      "libperl5.30": {
+        "version": "5.30.3-4",
+        "arch": "amd64"
+      },
+      "libpipeline1": {
+        "version": "1.5.3-1",
+        "arch": "amd64"
+      },
+      "libplist3": {
+        "version": "2.2.0-4",
+        "arch": "amd64"
+      },
+      "libplymouth5": {
+        "version": "0.9.5-0ubuntu2.1",
+        "arch": "amd64"
+      },
+      "libpng16-16": {
+        "version": "1.6.37-3",
+        "arch": "amd64"
+      },
+      "libpolkit-agent-1-0": {
+        "version": "0.105-29ubuntu0.1",
+        "arch": "amd64"
+      },
+      "libpolkit-gobject-1-0": {
+        "version": "0.105-29ubuntu0.1",
+        "arch": "amd64"
+      },
+      "libpopt0": {
+        "version": "1.18-1",
+        "arch": "amd64"
+      },
+      "libprocps8": {
+        "version": "2:3.3.16-5ubuntu2.2",
+        "arch": "amd64"
+      },
+      "libproxy1v5": {
+        "version": "0.4.15-13ubuntu1.1",
+        "arch": "amd64"
+      },
+      "libpsl5": {
+        "version": "0.21.0-1.1ubuntu1",
+        "arch": "amd64"
+      },
+      "libpython3-stdlib": {
+        "version": "3.8.6-0ubuntu1",
+        "arch": "amd64"
+      },
+      "libpython3.8": {
+        "version": "3.8.10-0ubuntu1~20.10.1",
+        "arch": "amd64"
+      },
+      "libpython3.8-minimal": {
+        "version": "3.8.10-0ubuntu1~20.10.1",
+        "arch": "amd64"
+      },
+      "libpython3.8-stdlib": {
+        "version": "3.8.10-0ubuntu1~20.10.1",
+        "arch": "amd64"
+      },
+      "libreadline5": {
+        "version": "5.2+dfsg-3build3",
+        "arch": "amd64"
+      },
+      "libreadline8": {
+        "version": "8.0-4",
+        "arch": "amd64"
+      },
+      "libroken18-heimdal": {
+        "version": "7.7.0+dfsg-2",
+        "arch": "amd64"
+      },
+      "librtmp1": {
+        "version": "2.4+20151223.gitfa8646d.1-2build2",
+        "arch": "amd64"
+      },
+      "libruby2.7": {
+        "version": "2.7.1-3ubuntu1.4",
+        "arch": "amd64"
+      },
+      "libsasl2-2": {
+        "version": "2.1.27+dfsg-2ubuntu1",
+        "arch": "amd64"
+      },
+      "libsasl2-modules": {
+        "version": "2.1.27+dfsg-2ubuntu1",
+        "arch": "amd64"
+      },
+      "libsasl2-modules-db": {
+        "version": "2.1.27+dfsg-2ubuntu1",
+        "arch": "amd64"
+      },
+      "libseccomp2": {
+        "version": "2.5.1-1ubuntu1~20.10.1",
+        "arch": "amd64"
+      },
+      "libselinux1": {
+        "version": "3.1-2",
+        "arch": "amd64"
+      },
+      "libsemanage-common": {
+        "version": "3.1-1",
+        "arch": "all"
+      },
+      "libsemanage1": {
+        "version": "3.1-1",
+        "arch": "amd64"
+      },
+      "libsensors-config": {
+        "version": "1:3.6.0-2ubuntu1",
+        "arch": "all"
+      },
+      "libsensors5": {
+        "version": "1:3.6.0-2ubuntu1",
+        "arch": "amd64"
+      },
+      "libsepol1": {
+        "version": "3.1-1",
+        "arch": "amd64"
+      },
+      "libsgutils2-2": {
+        "version": "1.45-1ubuntu1",
+        "arch": "amd64"
+      },
+      "libsigsegv2": {
+        "version": "2.12-2build1",
+        "arch": "amd64"
+      },
+      "libslang2": {
+        "version": "2.3.2-5",
+        "arch": "amd64"
+      },
+      "libsmartcols1": {
+        "version": "2.36-3ubuntu1",
+        "arch": "amd64"
+      },
+      "libsmbios-c2": {
+        "version": "2.4.3-1",
+        "arch": "amd64"
+      },
+      "libsoup2.4-1": {
+        "version": "2.72.0-2",
+        "arch": "amd64"
+      },
+      "libsqlite3-0": {
+        "version": "3.33.0-1ubuntu0.1",
+        "arch": "amd64"
+      },
+      "libss2": {
+        "version": "1.45.6-1ubuntu1",
+        "arch": "amd64"
+      },
+      "libssh-4": {
+        "version": "0.9.4-1ubuntu3",
+        "arch": "amd64"
+      },
+      "libssl1.1": {
+        "version": "1.1.1f-1ubuntu4.4",
+        "arch": "amd64"
+      },
+      "libstdc++6": {
+        "version": "10.3.0-1ubuntu1~20.10",
+        "arch": "amd64"
+      },
+      "libstemmer0d": {
+        "version": "2.0.0-2",
+        "arch": "amd64"
+      },
+      "libsystemd0": {
+        "version": "246.6-1ubuntu1.7",
+        "arch": "amd64"
+      },
+      "libtasn1-6": {
+        "version": "4.16.0-2",
+        "arch": "amd64"
+      },
+      "libtcl8.6": {
+        "version": "8.6.10+dfsg-1",
+        "arch": "amd64"
+      },
+      "libtdb1": {
+        "version": "1.4.3-1",
+        "arch": "amd64"
+      },
+      "libtext-charwidth-perl": {
+        "version": "0.04-10",
+        "arch": "amd64"
+      },
+      "libtext-iconv-perl": {
+        "version": "1.7-7",
+        "arch": "amd64"
+      },
+      "libtext-wrapi18n-perl": {
+        "version": "0.06-9",
+        "arch": "all"
+      },
+      "libtinfo6": {
+        "version": "6.2-1",
+        "arch": "amd64"
+      },
+      "libtirpc-common": {
+        "version": "1.2.6-1build1",
+        "arch": "all"
+      },
+      "libtirpc3": {
+        "version": "1.2.6-1build1",
+        "arch": "amd64"
+      },
+      "libtss2-esys0": {
+        "version": "3.0.1-1",
+        "arch": "amd64"
+      },
+      "libuchardet0": {
+        "version": "0.0.7-1",
+        "arch": "amd64"
+      },
+      "libudev1": {
+        "version": "246.6-1ubuntu1.7",
+        "arch": "amd64"
+      },
+      "libunistring2": {
+        "version": "0.9.10-4",
+        "arch": "amd64"
+      },
+      "libunwind8": {
+        "version": "1.3.2-2",
+        "arch": "amd64"
+      },
+      "libupower-glib3": {
+        "version": "0.99.11-2",
+        "arch": "amd64"
+      },
+      "liburcu6": {
+        "version": "0.12.1-1",
+        "arch": "amd64"
+      },
+      "libusb-1.0-0": {
+        "version": "2:1.0.23-2build1",
+        "arch": "amd64"
+      },
+      "libusbmuxd6": {
+        "version": "2.0.2-3",
+        "arch": "amd64"
+      },
+      "libutempter0": {
+        "version": "1.1.6-6ubuntu1",
+        "arch": "amd64"
+      },
+      "libuuid1": {
+        "version": "2.36-3ubuntu1",
+        "arch": "amd64"
+      },
+      "libuv1": {
+        "version": "1.38.0-2ubuntu2.1",
+        "arch": "amd64"
+      },
+      "libvorbis0a": {
+        "version": "1.3.7-1",
+        "arch": "amd64"
+      },
+      "libvorbisfile3": {
+        "version": "1.3.7-1",
+        "arch": "amd64"
+      },
+      "libwind0-heimdal": {
+        "version": "7.7.0+dfsg-2",
+        "arch": "amd64"
+      },
+      "libwrap0": {
+        "version": "7.6.q-30",
+        "arch": "amd64"
+      },
+      "libx11-6": {
+        "version": "2:1.6.12-1ubuntu0.1",
+        "arch": "amd64"
+      },
+      "libx11-data": {
+        "version": "2:1.6.12-1ubuntu0.1",
+        "arch": "all"
+      },
+      "libxau6": {
+        "version": "1:1.0.9-0ubuntu1",
+        "arch": "amd64"
+      },
+      "libxcb1": {
+        "version": "1.14-2",
+        "arch": "amd64"
+      },
+      "libxdmcp6": {
+        "version": "1:1.1.3-0ubuntu1",
+        "arch": "amd64"
+      },
+      "libxext6": {
+        "version": "2:1.3.4-0ubuntu1",
+        "arch": "amd64"
+      },
+      "libxml2": {
+        "version": "2.9.10+dfsg-5ubuntu0.20.10.2",
+        "arch": "amd64"
+      },
+      "libxmlb1": {
+        "version": "0.1.15-2ubuntu1~20.10.1",
+        "arch": "amd64"
+      },
+      "libxmlsec1": {
+        "version": "1.2.28-2",
+        "arch": "amd64"
+      },
+      "libxmlsec1-openssl": {
+        "version": "1.2.28-2",
+        "arch": "amd64"
+      },
+      "libxmuu1": {
+        "version": "2:1.1.3-0ubuntu1",
+        "arch": "amd64"
+      },
+      "libxslt1.1": {
+        "version": "1.1.34-4",
+        "arch": "amd64"
+      },
+      "libxtables12": {
+        "version": "1.8.5-3ubuntu2.20.10.2",
+        "arch": "amd64"
+      },
+      "libxxhash0": {
+        "version": "0.8.0-1ubuntu1.20.10.1",
+        "arch": "amd64"
+      },
+      "libyaml-0-2": {
+        "version": "0.2.2-1",
+        "arch": "amd64"
+      },
+      "libzstd1": {
+        "version": "1.4.5+dfsg-4ubuntu0.1",
+        "arch": "amd64"
+      },
+      "linux-base": {
+        "version": "4.5ubuntu4",
+        "arch": "all"
+      },
+      "linux-cloud-tools-5.8.0-63": {
+        "version": "5.8.0-63.71",
+        "arch": "amd64"
+      },
+      "linux-cloud-tools-5.8.0-63-generic": {
+        "version": "5.8.0-63.71",
+        "arch": "amd64"
+      },
+      "linux-cloud-tools-common": {
+        "version": "5.8.0-63.71",
+        "arch": "all"
+      },
+      "linux-cloud-tools-virtual": {
+        "version": "5.8.0.63.69",
+        "arch": "amd64"
+      },
+      "linux-firmware": {
+        "version": "1.190.6",
+        "arch": "all"
+      },
+      "linux-generic": {
+        "version": "5.8.0.63.69",
+        "arch": "amd64"
+      },
+      "linux-headers-5.8.0-63": {
+        "version": "5.8.0-63.71",
+        "arch": "all"
+      },
+      "linux-headers-5.8.0-63-generic": {
+        "version": "5.8.0-63.71",
+        "arch": "amd64"
+      },
+      "linux-headers-generic": {
+        "version": "5.8.0.63.69",
+        "arch": "amd64"
+      },
+      "linux-image-5.8.0-63-generic": {
+        "version": "5.8.0-63.71",
+        "arch": "amd64"
+      },
+      "linux-image-generic": {
+        "version": "5.8.0.63.69",
+        "arch": "amd64"
+      },
+      "linux-modules-5.8.0-63-generic": {
+        "version": "5.8.0-63.71",
+        "arch": "amd64"
+      },
+      "linux-modules-extra-5.8.0-63-generic": {
+        "version": "5.8.0-63.71",
+        "arch": "amd64"
+      },
+      "locales": {
+        "version": "2.32-0ubuntu3",
+        "arch": "all"
+      },
+      "login": {
+        "version": "1:4.8.1-1ubuntu6",
+        "arch": "amd64"
+      },
+      "logrotate": {
+        "version": "3.14.0-4ubuntu5",
+        "arch": "amd64"
+      },
+      "logsave": {
+        "version": "1.45.6-1ubuntu1",
+        "arch": "amd64"
+      },
+      "lsb-base": {
+        "version": "11.1.0ubuntu2",
+        "arch": "all"
+      },
+      "lsb-release": {
+        "version": "11.1.0ubuntu2",
+        "arch": "all"
+      },
+      "lshw": {
+        "version": "02.18.85-0.3ubuntu2.20.10.1",
+        "arch": "amd64"
+      },
+      "lsof": {
+        "version": "4.93.2+dfsg-1ubuntu0.20.10.1",
+        "arch": "amd64"
+      },
+      "ltrace": {
+        "version": "0.7.3-6.1ubuntu2",
+        "arch": "amd64"
+      },
+      "lvm2": {
+        "version": "2.03.07-1ubuntu3",
+        "arch": "amd64"
+      },
+      "lxd-agent-loader": {
+        "version": "0.4",
+        "arch": "all"
+      },
+      "lz4": {
+        "version": "1.9.2-2ubuntu0.20.10.1",
+        "arch": "amd64"
+      },
+      "man-db": {
+        "version": "2.9.3-2",
+        "arch": "amd64"
+      },
+      "manpages": {
+        "version": "5.08-1",
+        "arch": "all"
+      },
+      "mawk": {
+        "version": "1.3.4.20200120-2",
+        "arch": "amd64"
+      },
+      "mdadm": {
+        "version": "4.1-5ubuntu5",
+        "arch": "amd64"
+      },
+      "mime-support": {
+        "version": "3.64ubuntu1",
+        "arch": "all"
+      },
+      "mlocate": {
+        "version": "0.26-3ubuntu3",
+        "arch": "amd64"
+      },
+      "motd-news-config": {
+        "version": "11ubuntu14",
+        "arch": "all"
+      },
+      "mount": {
+        "version": "2.36-3ubuntu1",
+        "arch": "amd64"
+      },
+      "mtr-tiny": {
+        "version": "0.93-2",
+        "arch": "amd64"
+      },
+      "multipath-tools": {
+        "version": "0.8.4-4ubuntu2",
+        "arch": "amd64"
+      },
+      "nano": {
+        "version": "5.2-1",
+        "arch": "amd64"
+      },
+      "ncurses-base": {
+        "version": "6.2-1",
+        "arch": "all"
+      },
+      "ncurses-bin": {
+        "version": "6.2-1",
+        "arch": "amd64"
+      },
+      "ncurses-term": {
+        "version": "6.2-1",
+        "arch": "all"
+      },
+      "net-tools": {
+        "version": "1.60+git20180626.aebd88e-1ubuntu2",
+        "arch": "amd64"
+      },
+      "netbase": {
+        "version": "6.1",
+        "arch": "all"
+      },
+      "netcat-openbsd": {
+        "version": "1.217-2ubuntu1",
+        "arch": "amd64"
+      },
+      "netplan.io": {
+        "version": "0.102-0ubuntu1~20.10.3",
+        "arch": "amd64"
+      },
+      "networkd-dispatcher": {
+        "version": "2.0.1-1",
+        "arch": "all"
+      },
+      "node-jquery": {
+        "version": "3.5.1+dfsg-4",
+        "arch": "all"
+      },
+      "ntfs-3g": {
+        "version": "1:2017.3.23AR.3-3ubuntu2",
+        "arch": "amd64"
+      },
+      "open-iscsi": {
+        "version": "2.1.1-1ubuntu2.1",
+        "arch": "amd64"
+      },
+      "open-vm-tools": {
+        "version": "2:11.2.5-2ubuntu1~ubuntu20.10.1",
+        "arch": "amd64"
+      },
+      "openssh-client": {
+        "version": "1:8.3p1-1ubuntu0.1",
+        "arch": "amd64"
+      },
+      "openssh-server": {
+        "version": "1:8.3p1-1ubuntu0.1",
+        "arch": "amd64"
+      },
+      "openssh-sftp-server": {
+        "version": "1:8.3p1-1ubuntu0.1",
+        "arch": "amd64"
+      },
+      "openssl": {
+        "version": "1.1.1f-1ubuntu4.4",
+        "arch": "amd64"
+      },
+      "os-prober": {
+        "version": "1.74ubuntu2",
+        "arch": "amd64"
+      },
+      "overlayroot": {
+        "version": "0.47ubuntu1",
+        "arch": "all"
+      },
+      "packagekit": {
+        "version": "1.1.13-2ubuntu2",
+        "arch": "amd64"
+      },
+      "packagekit-tools": {
+        "version": "1.1.13-2ubuntu2",
+        "arch": "amd64"
+      },
+      "parted": {
+        "version": "3.3-4ubuntu0.20.10.1",
+        "arch": "amd64"
+      },
+      "passwd": {
+        "version": "1:4.8.1-1ubuntu6",
+        "arch": "amd64"
+      },
+      "pastebinit": {
+        "version": "1.5.1-1",
+        "arch": "all"
+      },
+      "patch": {
+        "version": "2.7.6-6",
+        "arch": "amd64"
+      },
+      "pci.ids": {
+        "version": "0.0~2020.07.21-1",
+        "arch": "all"
+      },
+      "pciutils": {
+        "version": "1:3.7.0-2",
+        "arch": "amd64"
+      },
+      "perl": {
+        "version": "5.30.3-4",
+        "arch": "amd64"
+      },
+      "perl-base": {
+        "version": "5.30.3-4",
+        "arch": "amd64"
+      },
+      "perl-modules-5.30": {
+        "version": "5.30.3-4",
+        "arch": "all"
+      },
+      "pinentry-curses": {
+        "version": "1.1.0-4build1",
+        "arch": "amd64"
+      },
+      "plymouth": {
+        "version": "0.9.5-0ubuntu2.1",
+        "arch": "amd64"
+      },
+      "plymouth-theme-ubuntu-text": {
+        "version": "0.9.5-0ubuntu2.1",
+        "arch": "amd64"
+      },
+      "policykit-1": {
+        "version": "0.105-29ubuntu0.1",
+        "arch": "amd64"
+      },
+      "pollinate": {
+        "version": "4.33-3ubuntu1.20.10.1",
+        "arch": "all"
+      },
+      "powermgmt-base": {
+        "version": "1.36",
+        "arch": "all"
+      },
+      "procps": {
+        "version": "2:3.3.16-5ubuntu2.2",
+        "arch": "amd64"
+      },
+      "psmisc": {
+        "version": "23.3-1",
+        "arch": "amd64"
+      },
+      "publicsuffix": {
+        "version": "20200729.1725-1",
+        "arch": "all"
+      },
+      "python-apt-common": {
+        "version": "2.1.3ubuntu1.4",
+        "arch": "all"
+      },
+      "python3": {
+        "version": "3.8.6-0ubuntu1",
+        "arch": "amd64"
+      },
+      "python3-apport": {
+        "version": "2.20.11-0ubuntu50.7",
+        "arch": "all"
+      },
+      "python3-apt": {
+        "version": "2.1.3ubuntu1.4",
+        "arch": "amd64"
+      },
+      "python3-attr": {
+        "version": "19.3.0-5",
+        "arch": "all"
+      },
+      "python3-automat": {
+        "version": "20.2.0-1",
+        "arch": "all"
+      },
+      "python3-blinker": {
+        "version": "1.4+dfsg1-0.3ubuntu2",
+        "arch": "all"
+      },
+      "python3-certifi": {
+        "version": "2020.4.5.1-1",
+        "arch": "all"
+      },
+      "python3-cffi-backend": {
+        "version": "1.14.2-1",
+        "arch": "amd64"
+      },
+      "python3-chardet": {
+        "version": "3.0.4-7",
+        "arch": "all"
+      },
+      "python3-click": {
+        "version": "7.1.2-1",
+        "arch": "all"
+      },
+      "python3-colorama": {
+        "version": "0.4.3-1build1",
+        "arch": "all"
+      },
+      "python3-commandnotfound": {
+        "version": "20.10.1",
+        "arch": "all"
+      },
+      "python3-configobj": {
+        "version": "5.0.6-4",
+        "arch": "all"
+      },
+      "python3-constantly": {
+        "version": "15.1.0-2",
+        "arch": "all"
+      },
+      "python3-cryptography": {
+        "version": "3.0-1ubuntu0.1",
+        "arch": "amd64"
+      },
+      "python3-dbus": {
+        "version": "1.2.16-3",
+        "arch": "amd64"
+      },
+      "python3-debconf": {
+        "version": "1.5.74",
+        "arch": "all"
+      },
+      "python3-debian": {
+        "version": "0.1.37",
+        "arch": "all"
+      },
+      "python3-distro": {
+        "version": "1.5.0-1",
+        "arch": "all"
+      },
+      "python3-distro-info": {
+        "version": "0.23ubuntu1",
+        "arch": "all"
+      },
+      "python3-distupgrade": {
+        "version": "1:20.10.16",
+        "arch": "all"
+      },
+      "python3-distutils": {
+        "version": "3.8.10-0ubuntu1~20.10",
+        "arch": "all"
+      },
+      "python3-gdbm": {
+        "version": "3.8.10-0ubuntu1~20.10",
+        "arch": "amd64"
+      },
+      "python3-gi": {
+        "version": "3.38.0-1",
+        "arch": "amd64"
+      },
+      "python3-hamcrest": {
+        "version": "1.9.0-3",
+        "arch": "all"
+      },
+      "python3-httplib2": {
+        "version": "0.18.1-1",
+        "arch": "all"
+      },
+      "python3-hyperlink": {
+        "version": "19.0.0-2",
+        "arch": "all"
+      },
+      "python3-idna": {
+        "version": "2.10-1",
+        "arch": "all"
+      },
+      "python3-incremental": {
+        "version": "16.10.1-3.2",
+        "arch": "all"
+      },
+      "python3-jeepney": {
+        "version": "0.4.3-1",
+        "arch": "all"
+      },
+      "python3-json-pointer": {
+        "version": "2.0-0ubuntu1",
+        "arch": "all"
+      },
+      "python3-jsonpatch": {
+        "version": "1.25-3",
+        "arch": "all"
+      },
+      "python3-jsonschema": {
+        "version": "3.2.0-0ubuntu2",
+        "arch": "all"
+      },
+      "python3-jwt": {
+        "version": "1.7.1-2ubuntu2",
+        "arch": "all"
+      },
+      "python3-keyring": {
+        "version": "21.3.0-1",
+        "arch": "all"
+      },
+      "python3-launchpadlib": {
+        "version": "1.10.13-1",
+        "arch": "all"
+      },
+      "python3-lazr.restfulclient": {
+        "version": "0.14.2-2build1",
+        "arch": "all"
+      },
+      "python3-lazr.uri": {
+        "version": "1.0.5-1",
+        "arch": "all"
+      },
+      "python3-lib2to3": {
+        "version": "3.8.10-0ubuntu1~20.10",
+        "arch": "all"
+      },
+      "python3-minimal": {
+        "version": "3.8.6-0ubuntu1",
+        "arch": "amd64"
+      },
+      "python3-netifaces": {
+        "version": "0.10.4-1ubuntu4",
+        "arch": "amd64"
+      },
+      "python3-newt": {
+        "version": "0.52.21-4ubuntu2",
+        "arch": "amd64"
+      },
+      "python3-oauthlib": {
+        "version": "3.1.0-2",
+        "arch": "all"
+      },
+      "python3-openssl": {
+        "version": "19.1.0-2",
+        "arch": "all"
+      },
+      "python3-pexpect": {
+        "version": "4.6.0-4",
+        "arch": "all"
+      },
+      "python3-pkg-resources": {
+        "version": "49.3.1-2",
+        "arch": "all"
+      },
+      "python3-problem-report": {
+        "version": "2.20.11-0ubuntu50.7",
+        "arch": "all"
+      },
+      "python3-ptyprocess": {
+        "version": "0.6.0-1ubuntu1",
+        "arch": "all"
+      },
+      "python3-pyasn1": {
+        "version": "0.4.8-1",
+        "arch": "all"
+      },
+      "python3-pyasn1-modules": {
+        "version": "0.2.1-1",
+        "arch": "all"
+      },
+      "python3-requests": {
+        "version": "2.23.0+dfsg-2",
+        "arch": "all"
+      },
+      "python3-requests-unixsocket": {
+        "version": "0.2.0-2",
+        "arch": "all"
+      },
+      "python3-secretstorage": {
+        "version": "3.1.2-1",
+        "arch": "all"
+      },
+      "python3-serial": {
+        "version": "3.4-5.1",
+        "arch": "all"
+      },
+      "python3-service-identity": {
+        "version": "18.1.0-6",
+        "arch": "all"
+      },
+      "python3-setuptools": {
+        "version": "49.3.1-2",
+        "arch": "all"
+      },
+      "python3-simplejson": {
+        "version": "3.17.0-1",
+        "arch": "amd64"
+      },
+      "python3-six": {
+        "version": "1.15.0-1",
+        "arch": "all"
+      },
+      "python3-software-properties": {
+        "version": "0.99.3.1",
+        "arch": "all"
+      },
+      "python3-systemd": {
+        "version": "234-3build2",
+        "arch": "amd64"
+      },
+      "python3-twisted": {
+        "version": "18.9.0-11ubuntu0.20.10.1",
+        "arch": "all"
+      },
+      "python3-twisted-bin": {
+        "version": "18.9.0-11ubuntu0.20.10.1",
+        "arch": "amd64"
+      },
+      "python3-update-manager": {
+        "version": "1:20.10.6",
+        "arch": "all"
+      },
+      "python3-urllib3": {
+        "version": "1.25.9-1",
+        "arch": "all"
+      },
+      "python3-wadllib": {
+        "version": "1.3.4-1",
+        "arch": "all"
+      },
+      "python3-yaml": {
+        "version": "5.3.1-2ubuntu0.1",
+        "arch": "amd64"
+      },
+      "python3-zope.interface": {
+        "version": "4.7.1-2ubuntu1",
+        "arch": "amd64"
+      },
+      "python3.8": {
+        "version": "3.8.10-0ubuntu1~20.10.1",
+        "arch": "amd64"
+      },
+      "python3.8-minimal": {
+        "version": "3.8.10-0ubuntu1~20.10.1",
+        "arch": "amd64"
+      },
+      "rake": {
+        "version": "13.0.1-4",
+        "arch": "all"
+      },
+      "readline-common": {
+        "version": "8.0-4",
+        "arch": "all"
+      },
+      "rsync": {
+        "version": "3.2.3-2ubuntu1",
+        "arch": "amd64"
+      },
+      "rsyslog": {
+        "version": "8.2006.0-2ubuntu1",
+        "arch": "amd64"
+      },
+      "ruby": {
+        "version": "1:2.7+1",
+        "arch": "amd64"
+      },
+      "ruby-minitest": {
+        "version": "5.13.0-1",
+        "arch": "all"
+      },
+      "ruby-net-telnet": {
+        "version": "0.1.1-2",
+        "arch": "all"
+      },
+      "ruby-power-assert": {
+        "version": "1.1.7-1",
+        "arch": "all"
+      },
+      "ruby-test-unit": {
+        "version": "3.3.5-1",
+        "arch": "all"
+      },
+      "ruby-xmlrpc": {
+        "version": "0.3.0-2",
+        "arch": "all"
+      },
+      "ruby2.7": {
+        "version": "2.7.1-3ubuntu1.4",
+        "arch": "amd64"
+      },
+      "rubygems-integration": {
+        "version": "1.17.2",
+        "arch": "all"
+      },
+      "run-one": {
+        "version": "1.17-0ubuntu1",
+        "arch": "all"
+      },
+      "sbsigntool": {
+        "version": "0.9.2-2ubuntu4",
+        "arch": "amd64"
+      },
+      "screen": {
+        "version": "4.8.0-2ubuntu0.1",
+        "arch": "amd64"
+      },
+      "secureboot-db": {
+        "version": "1.8",
+        "arch": "amd64"
+      },
+      "sed": {
+        "version": "4.7-1ubuntu1",
+        "arch": "amd64"
+      },
+      "sensible-utils": {
+        "version": "0.0.13",
+        "arch": "all"
+      },
+      "sg3-utils": {
+        "version": "1.45-1ubuntu1",
+        "arch": "amd64"
+      },
+      "sg3-utils-udev": {
+        "version": "1.45-1ubuntu1",
+        "arch": "all"
+      },
+      "shared-mime-info": {
+        "version": "2.0-1",
+        "arch": "amd64"
+      },
+      "snapd": {
+        "version": "2.49.2+20.10",
+        "arch": "amd64"
+      },
+      "software-properties-common": {
+        "version": "0.99.3.1",
+        "arch": "all"
+      },
+      "sosreport": {
+        "version": "4.1-1ubuntu0.20.10.2",
+        "arch": "amd64"
+      },
+      "sound-theme-freedesktop": {
+        "version": "0.8-2ubuntu1",
+        "arch": "all"
+      },
+      "squashfs-tools": {
+        "version": "1:4.4-2",
+        "arch": "amd64"
+      },
+      "ssh-import-id": {
+        "version": "5.10-0ubuntu1",
+        "arch": "all"
+      },
+      "strace": {
+        "version": "5.5-3ubuntu1",
+        "arch": "amd64"
+      },
+      "sudo": {
+        "version": "1.9.1-1ubuntu1.1",
+        "arch": "amd64"
+      },
+      "sysstat": {
+        "version": "12.4.0-1",
+        "arch": "amd64"
+      },
+      "systemd": {
+        "version": "246.6-1ubuntu1.7",
+        "arch": "amd64"
+      },
+      "systemd-sysv": {
+        "version": "246.6-1ubuntu1.7",
+        "arch": "amd64"
+      },
+      "systemd-timesyncd": {
+        "version": "246.6-1ubuntu1.7",
+        "arch": "amd64"
+      },
+      "sysvinit-utils": {
+        "version": "2.96-3ubuntu1",
+        "arch": "amd64"
+      },
+      "tar": {
+        "version": "1.30+dfsg-7ubuntu0.20.10.1",
+        "arch": "amd64"
+      },
+      "tcpdump": {
+        "version": "4.9.3-6",
+        "arch": "amd64"
+      },
+      "telnet": {
+        "version": "0.17-41.2build1",
+        "arch": "amd64"
+      },
+      "thermald": {
+        "version": "2.3-4ubuntu1",
+        "arch": "amd64"
+      },
+      "thin-provisioning-tools": {
+        "version": "0.8.5-4build1",
+        "arch": "amd64"
+      },
+      "time": {
+        "version": "1.7-25.1build2",
+        "arch": "amd64"
+      },
+      "tmux": {
+        "version": "3.1b-1ubuntu0.1",
+        "arch": "amd64"
+      },
+      "tpm-udev": {
+        "version": "0.4",
+        "arch": "all"
+      },
+      "tzdata": {
+        "version": "2021a-0ubuntu0.20.10",
+        "arch": "all"
+      },
+      "ubuntu-advantage-tools": {
+        "version": "27.1~20.10.1",
+        "arch": "amd64"
+      },
+      "ubuntu-keyring": {
+        "version": "2020.06.17.3",
+        "arch": "all"
+      },
+      "ubuntu-minimal": {
+        "version": "1.459",
+        "arch": "amd64"
+      },
+      "ubuntu-release-upgrader-core": {
+        "version": "1:20.10.16",
+        "arch": "all"
+      },
+      "ubuntu-server": {
+        "version": "1.459",
+        "arch": "amd64"
+      },
+      "ubuntu-standard": {
+        "version": "1.459",
+        "arch": "amd64"
+      },
+      "ucf": {
+        "version": "3.0043",
+        "arch": "all"
+      },
+      "udev": {
+        "version": "246.6-1ubuntu1.7",
+        "arch": "amd64"
+      },
+      "ufw": {
+        "version": "0.36-7",
+        "arch": "all"
+      },
+      "unattended-upgrades": {
+        "version": "2.7",
+        "arch": "all"
+      },
+      "unzip": {
+        "version": "6.0-25ubuntu1",
+        "arch": "amd64"
+      },
+      "update-manager-core": {
+        "version": "1:20.10.6",
+        "arch": "all"
+      },
+      "update-notifier-common": {
+        "version": "3.192.34.1",
+        "arch": "all"
+      },
+      "upower": {
+        "version": "0.99.11-2",
+        "arch": "amd64"
+      },
+      "usb.ids": {
+        "version": "2020.08.26-1",
+        "arch": "all"
+      },
+      "usbmuxd": {
+        "version": "1.1.1-2",
+        "arch": "amd64"
+      },
+      "usbutils": {
+        "version": "1:012-2",
+        "arch": "amd64"
+      },
+      "util-linux": {
+        "version": "2.36-3ubuntu1",
+        "arch": "amd64"
+      },
+      "uuid-runtime": {
+        "version": "2.36-3ubuntu1",
+        "arch": "amd64"
+      },
+      "vim": {
+        "version": "2:8.2.0716-3ubuntu2",
+        "arch": "amd64"
+      },
+      "vim-common": {
+        "version": "2:8.2.0716-3ubuntu2",
+        "arch": "all"
+      },
+      "vim-nox": {
+        "version": "2:8.2.0716-3ubuntu2",
+        "arch": "amd64"
+      },
+      "vim-runtime": {
+        "version": "2:8.2.0716-3ubuntu2",
+        "arch": "all"
+      },
+      "vim-tiny": {
+        "version": "2:8.2.0716-3ubuntu2",
+        "arch": "amd64"
+      },
+      "wget": {
+        "version": "1.20.3-1ubuntu1",
+        "arch": "amd64"
+      },
+      "whiptail": {
+        "version": "0.52.21-4ubuntu2",
+        "arch": "amd64"
+      },
+      "wireless-regdb": {
+        "version": "2020.11.20-0ubuntu1~20.10.1",
+        "arch": "all"
+      },
+      "xauth": {
+        "version": "1:1.1-0ubuntu1",
+        "arch": "amd64"
+      },
+      "xdg-user-dirs": {
+        "version": "0.17-2ubuntu2",
+        "arch": "amd64"
+      },
+      "xfsprogs": {
+        "version": "5.6.0-1ubuntu4",
+        "arch": "amd64"
+      },
+      "xkb-data": {
+        "version": "2.29-2",
+        "arch": "all"
+      },
+      "xxd": {
+        "version": "2:8.2.0716-3ubuntu2",
+        "arch": "amd64"
+      },
+      "xz-utils": {
+        "version": "5.2.4-1ubuntu1",
+        "arch": "amd64"
+      },
+      "zerofree": {
+        "version": "1.1.1-1build1",
+        "arch": "amd64"
+      },
+      "zip": {
+        "version": "3.0-11build1",
+        "arch": "amd64"
+      },
+      "zlib1g": {
+        "version": "1:1.2.11.dfsg-2ubuntu4",
+        "arch": "amd64"
+      }
+    },
+    "root_group": "root",
+    "shard_seed": 154489501,
+    "shells": [
+      "/bin/sh",
+      "/bin/bash",
+      "/usr/bin/bash",
+      "/bin/rbash",
+      "/usr/bin/rbash",
+      "/bin/dash",
+      "/usr/bin/dash",
+      "/usr/bin/tmux",
+      "/usr/bin/screen"
+    ],
+    "sysconf": {
+      "LINK_MAX": 65000,
+      "_POSIX_LINK_MAX": 65000,
+      "MAX_CANON": 255,
+      "_POSIX_MAX_CANON": 255,
+      "MAX_INPUT": 255,
+      "_POSIX_MAX_INPUT": 255,
+      "NAME_MAX": 255,
+      "_POSIX_NAME_MAX": 255,
+      "PATH_MAX": 4096,
+      "_POSIX_PATH_MAX": 4096,
+      "PIPE_BUF": 4096,
+      "_POSIX_PIPE_BUF": 4096,
+      "SOCK_MAXBUF": null,
+      "_POSIX_ASYNC_IO": null,
+      "_POSIX_CHOWN_RESTRICTED": 1,
+      "_POSIX_NO_TRUNC": 1,
+      "_POSIX_PRIO_IO": null,
+      "_POSIX_SYNC_IO": null,
+      "_POSIX_VDISABLE": 0,
+      "ARG_MAX": 2097152,
+      "ATEXIT_MAX": 2147483647,
+      "CHAR_BIT": 8,
+      "CHAR_MAX": 127,
+      "CHAR_MIN": -128,
+      "CHILD_MAX": 15359,
+      "CLK_TCK": 100,
+      "INT_MAX": 2147483647,
+      "INT_MIN": -2147483648,
+      "IOV_MAX": 1024,
+      "LOGNAME_MAX": 256,
+      "LONG_BIT": 64,
+      "MB_LEN_MAX": 16,
+      "NGROUPS_MAX": 65536,
+      "NL_ARGMAX": 4096,
+      "NL_LANGMAX": 2048,
+      "NL_MSGMAX": 2147483647,
+      "NL_NMAX": 2147483647,
+      "NL_SETMAX": 2147483647,
+      "NL_TEXTMAX": 2147483647,
+      "NSS_BUFLEN_GROUP": 1024,
+      "NSS_BUFLEN_PASSWD": 1024,
+      "NZERO": 20,
+      "OPEN_MAX": 1024,
+      "PAGESIZE": 4096,
+      "PAGE_SIZE": 4096,
+      "PASS_MAX": 8192,
+      "PTHREAD_DESTRUCTOR_ITERATIONS": 4,
+      "PTHREAD_KEYS_MAX": 1024,
+      "PTHREAD_STACK_MIN": 16384,
+      "PTHREAD_THREADS_MAX": null,
+      "SCHAR_MAX": 127,
+      "SCHAR_MIN": -128,
+      "SHRT_MAX": 32767,
+      "SHRT_MIN": -32768,
+      "SSIZE_MAX": 32767,
+      "TTY_NAME_MAX": 32,
+      "TZNAME_MAX": null,
+      "UCHAR_MAX": 255,
+      "UINT_MAX": 4294967295,
+      "UIO_MAXIOV": 1024,
+      "ULONG_MAX": 18446744073709551615,
+      "USHRT_MAX": 65535,
+      "WORD_BIT": 32,
+      "_AVPHYS_PAGES": 679911,
+      "_NPROCESSORS_CONF": 2,
+      "_NPROCESSORS_ONLN": 2,
+      "_PHYS_PAGES": 1006661,
+      "_POSIX_ARG_MAX": 2097152,
+      "_POSIX_ASYNCHRONOUS_IO": 200809,
+      "_POSIX_CHILD_MAX": 15359,
+      "_POSIX_FSYNC": 200809,
+      "_POSIX_JOB_CONTROL": 1,
+      "_POSIX_MAPPED_FILES": 200809,
+      "_POSIX_MEMLOCK": 200809,
+      "_POSIX_MEMLOCK_RANGE": 200809,
+      "_POSIX_MEMORY_PROTECTION": 200809,
+      "_POSIX_MESSAGE_PASSING": 200809,
+      "_POSIX_NGROUPS_MAX": 65536,
+      "_POSIX_OPEN_MAX": 1024,
+      "_POSIX_PII": null,
+      "_POSIX_PII_INTERNET": null,
+      "_POSIX_PII_INTERNET_DGRAM": null,
+      "_POSIX_PII_INTERNET_STREAM": null,
+      "_POSIX_PII_OSI": null,
+      "_POSIX_PII_OSI_CLTS": null,
+      "_POSIX_PII_OSI_COTS": null,
+      "_POSIX_PII_OSI_M": null,
+      "_POSIX_PII_SOCKET": null,
+      "_POSIX_PII_XTI": null,
+      "_POSIX_POLL": null,
+      "_POSIX_PRIORITIZED_IO": 200809,
+      "_POSIX_PRIORITY_SCHEDULING": 200809,
+      "_POSIX_REALTIME_SIGNALS": 200809,
+      "_POSIX_SAVED_IDS": 1,
+      "_POSIX_SELECT": null,
+      "_POSIX_SEMAPHORES": 200809,
+      "_POSIX_SHARED_MEMORY_OBJECTS": 200809,
+      "_POSIX_SSIZE_MAX": 32767,
+      "_POSIX_STREAM_MAX": 16,
+      "_POSIX_SYNCHRONIZED_IO": 200809,
+      "_POSIX_THREADS": 200809,
+      "_POSIX_THREAD_ATTR_STACKADDR": 200809,
+      "_POSIX_THREAD_ATTR_STACKSIZE": 200809,
+      "_POSIX_THREAD_PRIORITY_SCHEDULING": 200809,
+      "_POSIX_THREAD_PRIO_INHERIT": 200809,
+      "_POSIX_THREAD_PRIO_PROTECT": 200809,
+      "_POSIX_THREAD_ROBUST_PRIO_INHERIT": null,
+      "_POSIX_THREAD_ROBUST_PRIO_PROTECT": null,
+      "_POSIX_THREAD_PROCESS_SHARED": 200809,
+      "_POSIX_THREAD_SAFE_FUNCTIONS": 200809,
+      "_POSIX_TIMERS": 200809,
+      "TIMER_MAX": null,
+      "_POSIX_TZNAME_MAX": null,
+      "_POSIX_VERSION": 200809,
+      "_T_IOV_MAX": null,
+      "_XOPEN_CRYPT": null,
+      "_XOPEN_ENH_I18N": 1,
+      "_XOPEN_LEGACY": 1,
+      "_XOPEN_REALTIME": 1,
+      "_XOPEN_REALTIME_THREADS": 1,
+      "_XOPEN_SHM": 1,
+      "_XOPEN_UNIX": 1,
+      "_XOPEN_VERSION": 700,
+      "_XOPEN_XCU_VERSION": 4,
+      "_XOPEN_XPG2": 1,
+      "_XOPEN_XPG3": 1,
+      "_XOPEN_XPG4": 1,
+      "BC_BASE_MAX": 99,
+      "BC_DIM_MAX": 2048,
+      "BC_SCALE_MAX": 99,
+      "BC_STRING_MAX": 1000,
+      "CHARCLASS_NAME_MAX": 2048,
+      "COLL_WEIGHTS_MAX": 255,
+      "EQUIV_CLASS_MAX": null,
+      "EXPR_NEST_MAX": 32,
+      "LINE_MAX": 2048,
+      "POSIX2_BC_BASE_MAX": 99,
+      "POSIX2_BC_DIM_MAX": 2048,
+      "POSIX2_BC_SCALE_MAX": 99,
+      "POSIX2_BC_STRING_MAX": 1000,
+      "POSIX2_CHAR_TERM": 200809,
+      "POSIX2_COLL_WEIGHTS_MAX": 255,
+      "POSIX2_C_BIND": 200809,
+      "POSIX2_C_DEV": 200809,
+      "POSIX2_C_VERSION": 200809,
+      "POSIX2_EXPR_NEST_MAX": 32,
+      "POSIX2_FORT_DEV": null,
+      "POSIX2_FORT_RUN": null,
+      "_POSIX2_LINE_MAX": 2048,
+      "POSIX2_LINE_MAX": 2048,
+      "POSIX2_LOCALEDEF": 200809,
+      "POSIX2_RE_DUP_MAX": 32767,
+      "POSIX2_SW_DEV": 200809,
+      "POSIX2_UPE": null,
+      "POSIX2_VERSION": 200809,
+      "RE_DUP_MAX": 32767,
+      "PATH": "/bin:/usr/bin",
+      "CS_PATH": "/bin:/usr/bin",
+      "LFS_CFLAGS": null,
+      "LFS_LDFLAGS": null,
+      "LFS_LIBS": null,
+      "LFS_LINTFLAGS": null,
+      "LFS64_CFLAGS": "-D_LARGEFILE64_SOURCE",
+      "LFS64_LDFLAGS": null,
+      "LFS64_LIBS": null,
+      "LFS64_LINTFLAGS": "-D_LARGEFILE64_SOURCE",
+      "_XBS5_WIDTH_RESTRICTED_ENVS": "XBS5_LP64_OFF64",
+      "XBS5_WIDTH_RESTRICTED_ENVS": "XBS5_LP64_OFF64",
+      "_XBS5_ILP32_OFF32": null,
+      "XBS5_ILP32_OFF32_CFLAGS": null,
+      "XBS5_ILP32_OFF32_LDFLAGS": null,
+      "XBS5_ILP32_OFF32_LIBS": null,
+      "XBS5_ILP32_OFF32_LINTFLAGS": null,
+      "_XBS5_ILP32_OFFBIG": null,
+      "XBS5_ILP32_OFFBIG_CFLAGS": null,
+      "XBS5_ILP32_OFFBIG_LDFLAGS": null,
+      "XBS5_ILP32_OFFBIG_LIBS": null,
+      "XBS5_ILP32_OFFBIG_LINTFLAGS": null,
+      "_XBS5_LP64_OFF64": 1,
+      "XBS5_LP64_OFF64_CFLAGS": "-m64",
+      "XBS5_LP64_OFF64_LDFLAGS": "-m64",
+      "XBS5_LP64_OFF64_LIBS": null,
+      "XBS5_LP64_OFF64_LINTFLAGS": null,
+      "_XBS5_LPBIG_OFFBIG": null,
+      "XBS5_LPBIG_OFFBIG_CFLAGS": null,
+      "XBS5_LPBIG_OFFBIG_LDFLAGS": null,
+      "XBS5_LPBIG_OFFBIG_LIBS": null,
+      "XBS5_LPBIG_OFFBIG_LINTFLAGS": null,
+      "_POSIX_V6_ILP32_OFF32": null,
+      "POSIX_V6_ILP32_OFF32_CFLAGS": null,
+      "POSIX_V6_ILP32_OFF32_LDFLAGS": null,
+      "POSIX_V6_ILP32_OFF32_LIBS": null,
+      "POSIX_V6_ILP32_OFF32_LINTFLAGS": null,
+      "_POSIX_V6_WIDTH_RESTRICTED_ENVS": "POSIX_V6_LP64_OFF64",
+      "POSIX_V6_WIDTH_RESTRICTED_ENVS": "POSIX_V6_LP64_OFF64",
+      "_POSIX_V6_ILP32_OFFBIG": null,
+      "POSIX_V6_ILP32_OFFBIG_CFLAGS": null,
+      "POSIX_V6_ILP32_OFFBIG_LDFLAGS": null,
+      "POSIX_V6_ILP32_OFFBIG_LIBS": null,
+      "POSIX_V6_ILP32_OFFBIG_LINTFLAGS": null,
+      "_POSIX_V6_LP64_OFF64": 1,
+      "POSIX_V6_LP64_OFF64_CFLAGS": "-m64",
+      "POSIX_V6_LP64_OFF64_LDFLAGS": "-m64",
+      "POSIX_V6_LP64_OFF64_LIBS": null,
+      "POSIX_V6_LP64_OFF64_LINTFLAGS": null,
+      "_POSIX_V6_LPBIG_OFFBIG": null,
+      "POSIX_V6_LPBIG_OFFBIG_CFLAGS": null,
+      "POSIX_V6_LPBIG_OFFBIG_LDFLAGS": null,
+      "POSIX_V6_LPBIG_OFFBIG_LIBS": null,
+      "POSIX_V6_LPBIG_OFFBIG_LINTFLAGS": null,
+      "_POSIX_V7_ILP32_OFF32": null,
+      "POSIX_V7_ILP32_OFF32_CFLAGS": null,
+      "POSIX_V7_ILP32_OFF32_LDFLAGS": null,
+      "POSIX_V7_ILP32_OFF32_LIBS": null,
+      "POSIX_V7_ILP32_OFF32_LINTFLAGS": null,
+      "_POSIX_V7_WIDTH_RESTRICTED_ENVS": "POSIX_V7_LP64_OFF64",
+      "POSIX_V7_WIDTH_RESTRICTED_ENVS": "POSIX_V7_LP64_OFF64",
+      "_POSIX_V7_ILP32_OFFBIG": null,
+      "POSIX_V7_ILP32_OFFBIG_CFLAGS": null,
+      "POSIX_V7_ILP32_OFFBIG_LDFLAGS": null,
+      "POSIX_V7_ILP32_OFFBIG_LIBS": null,
+      "POSIX_V7_ILP32_OFFBIG_LINTFLAGS": null,
+      "_POSIX_V7_LP64_OFF64": 1,
+      "POSIX_V7_LP64_OFF64_CFLAGS": "-m64",
+      "POSIX_V7_LP64_OFF64_LDFLAGS": "-m64",
+      "POSIX_V7_LP64_OFF64_LIBS": null,
+      "POSIX_V7_LP64_OFF64_LINTFLAGS": null,
+      "_POSIX_V7_LPBIG_OFFBIG": null,
+      "POSIX_V7_LPBIG_OFFBIG_CFLAGS": null,
+      "POSIX_V7_LPBIG_OFFBIG_LDFLAGS": null,
+      "POSIX_V7_LPBIG_OFFBIG_LIBS": null,
+      "POSIX_V7_LPBIG_OFFBIG_LINTFLAGS": null,
+      "_POSIX_ADVISORY_INFO": 200809,
+      "_POSIX_BARRIERS": 200809,
+      "_POSIX_BASE": null,
+      "_POSIX_C_LANG_SUPPORT": null,
+      "_POSIX_C_LANG_SUPPORT_R": null,
+      "_POSIX_CLOCK_SELECTION": 200809,
+      "_POSIX_CPUTIME": 200809,
+      "_POSIX_THREAD_CPUTIME": 200809,
+      "_POSIX_DEVICE_SPECIFIC": null,
+      "_POSIX_DEVICE_SPECIFIC_R": null,
+      "_POSIX_FD_MGMT": null,
+      "_POSIX_FIFO": null,
+      "_POSIX_PIPE": null,
+      "_POSIX_FILE_ATTRIBUTES": null,
+      "_POSIX_FILE_LOCKING": null,
+      "_POSIX_FILE_SYSTEM": null,
+      "_POSIX_MONOTONIC_CLOCK": 200809,
+      "_POSIX_MULTI_PROCESS": null,
+      "_POSIX_SINGLE_PROCESS": null,
+      "_POSIX_NETWORKING": null,
+      "_POSIX_READER_WRITER_LOCKS": 200809,
+      "_POSIX_SPIN_LOCKS": 200809,
+      "_POSIX_REGEXP": 1,
+      "_REGEX_VERSION": null,
+      "_POSIX_SHELL": 1,
+      "_POSIX_SIGNALS": null,
+      "_POSIX_SPAWN": 200809,
+      "_POSIX_SPORADIC_SERVER": null,
+      "_POSIX_THREAD_SPORADIC_SERVER": null,
+      "_POSIX_SYSTEM_DATABASE": null,
+      "_POSIX_SYSTEM_DATABASE_R": null,
+      "_POSIX_TIMEOUTS": 200809,
+      "_POSIX_TYPED_MEMORY_OBJECTS": null,
+      "_POSIX_USER_GROUPS": null,
+      "_POSIX_USER_GROUPS_R": null,
+      "POSIX2_PBS": null,
+      "POSIX2_PBS_ACCOUNTING": null,
+      "POSIX2_PBS_LOCATE": null,
+      "POSIX2_PBS_TRACK": null,
+      "POSIX2_PBS_MESSAGE": null,
+      "SYMLOOP_MAX": null,
+      "STREAM_MAX": 16,
+      "AIO_LISTIO_MAX": null,
+      "AIO_MAX": null,
+      "AIO_PRIO_DELTA_MAX": 20,
+      "DELAYTIMER_MAX": 2147483647,
+      "HOST_NAME_MAX": 64,
+      "LOGIN_NAME_MAX": 256,
+      "MQ_OPEN_MAX": null,
+      "MQ_PRIO_MAX": 32768,
+      "_POSIX_DEVICE_IO": null,
+      "_POSIX_TRACE": null,
+      "_POSIX_TRACE_EVENT_FILTER": null,
+      "_POSIX_TRACE_INHERIT": null,
+      "_POSIX_TRACE_LOG": null,
+      "RTSIG_MAX": 32,
+      "SEM_NSEMS_MAX": null,
+      "SEM_VALUE_MAX": 2147483647,
+      "SIGQUEUE_MAX": 15359,
+      "FILESIZEBITS": 64,
+      "POSIX_ALLOC_SIZE_MIN": 4096,
+      "POSIX_REC_INCR_XFER_SIZE": null,
+      "POSIX_REC_MAX_XFER_SIZE": null,
+      "POSIX_REC_MIN_XFER_SIZE": 4096,
+      "POSIX_REC_XFER_ALIGN": 4096,
+      "SYMLINK_MAX": null,
+      "GNU_LIBC_VERSION": "glibc 2.32",
+      "GNU_LIBPTHREAD_VERSION": "NPTL 2.32",
+      "POSIX2_SYMLINKS": 1,
+      "LEVEL1_ICACHE_SIZE": 32768,
+      "LEVEL1_ICACHE_ASSOC": 8,
+      "LEVEL1_ICACHE_LINESIZE": 64,
+      "LEVEL1_DCACHE_SIZE": 32768,
+      "LEVEL1_DCACHE_ASSOC": 8,
+      "LEVEL1_DCACHE_LINESIZE": 64,
+      "LEVEL2_CACHE_SIZE": 262144,
+      "LEVEL2_CACHE_ASSOC": 4,
+      "LEVEL2_CACHE_LINESIZE": 64,
+      "LEVEL3_CACHE_SIZE": 12582912,
+      "LEVEL3_CACHE_ASSOC": 16,
+      "LEVEL3_CACHE_LINESIZE": 64,
+      "LEVEL4_CACHE_SIZE": 0,
+      "LEVEL4_CACHE_ASSOC": 0,
+      "LEVEL4_CACHE_LINESIZE": 0,
+      "IPV6": 200809,
+      "RAW_SOCKETS": 200809,
+      "_POSIX_IPV6": 200809,
+      "_POSIX_RAW_SOCKETS": 200809
+    },
+    "time": {
+      "timezone": "UTC"
+    },
+    "vmware": {
+      "host": {
+        "type": "vmware_desktop"
+      },
+      "guest": {
+        "vmware_tools_version": "11.2.5.26209"
+      },
+      "hosttime": "20 Mar 2022 14:15:54",
+      "speed": "2592 MHz",
+      "sessionid": "",
+      "balloon": "",
+      "swap": "",
+      "memlimit": "",
+      "memres": "",
+      "cpures": "",
+      "cpulimit": "",
+      "upgrade": "",
+      "timesync": "Enabled"
+    },
+    "chef_guid": "e08e1c8e-ca87-4d4d-9ae3-f61b7a518d3c",
+    "name": "chef",
+    "chef_environment": "_default",
+    "recipes": [
+      "deployapp",
+      "deployapp::default"
+    ],
+    "expanded_run_list": [
+      "deployapp::default"
+    ],
+    "roles": [
+
+    ],
+    "cookbooks": {
+      "deployapp": {
+        "version": "0.1.0"
+      }
+    }
+  },
+  "run_list": [
+    "recipe[deployapp]"
+  ]
+}

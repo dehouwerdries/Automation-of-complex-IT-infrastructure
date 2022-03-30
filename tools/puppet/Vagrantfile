@@ -1,0 +1,86 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+### Provider
+# Set vmware_desktop as the default provider for Vagrant
+# Uncomment to use Virtualbox as the default provider
+ENV['VAGRANT_DEFAULT_PROVIDER'] = "vmware_desktop"
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "generic/ubuntu2004"
+
+  # Check for box updates
+  config.vm.box_check_update = true
+
+  config.vm.define "puppet-server" do |server|
+    ### Config
+    ## Hostname
+    server.vm.hostname = "puppet"
+    ## Networking
+    server.vm.network "private_network", ip: "192.168.61.2", hostname: true, virtualbox_intnet: true
+
+    ### Provisioning
+    server.vm.provision "shell", inline: <<-SHELL
+    ## Installation of Puppetserver, enable and start the service.
+      wget https://apt.puppet.com/puppet7-release-focal.deb
+      sudo dpkg -i puppet7-release-focal.deb
+      sudo rm puppet7-release-focal.deb 
+      sudo apt-get update -y
+      sudo apt-get install puppetserver -y
+      sudo sed -i 's/2g/512m/g' /etc/default/puppetserver
+    ## Puppetserver settings
+    # Allow autosign, not recommended to allow this
+      sudo echo "autosign = true" >> /etc/puppetlabs/puppet/puppet.conf
+    # Enable and start the puppetserver service
+      sudo systemctl start puppetserver.service
+      sudo systemctl enable puppetserver.service
+    ## Dirty way to add a FQDN
+    #  Change first occurence of puppet to puppet.local in the hosts file
+      sudo sed -i "1 s/puppet/puppet.local/1" /etc/hosts
+    # Add puppetagent to the hosts file
+      sudo echo "192.168.61.3 puppetagent.local puppetagent" >> /etc/hosts
+    ## Firewall rules
+      sudo ufw allow ssh
+      sudo ufw allow 8140
+    ## Puppet modules
+    sudo /opt/puppetlabs/puppet/bin/puppet module install puppetlabs-docker --version 4.1.2
+    SHELL
+
+    ### Shared folder containing the manifests
+    server.vm.synced_folder "manifests/", "/etc/puppetlabs/code/environments/production/manifests"
+  end 
+
+  config.vm.define "puppet-agent" do |agent|
+    ### Config
+    ## Hostname
+    agent.vm.hostname = "puppetagent"
+    ## Networking
+    agent.vm.network "private_network", ip: "192.168.61.3", hostname: true, virtualbox_intnet: true
+    agent.vm.network "forwarded_port", guest: 5000, host: 80
+
+    ### Provisioning
+    agent.vm.provision "shell", inline: <<-SHELL
+    ## Installation of Puppetagent.
+      wget https://apt.puppet.com/puppet7-release-focal.deb
+      sudo dpkg -i puppet7-release-focal.deb
+      sudo rm puppet7-release-focal.deb
+      sudo apt-get update -y
+      sudo apt-get install puppet-agent -y
+    ## Dirty way to add a FQDN
+    #  Change first occurence of puppetagent to puppetagent.local in the hosts file
+      sudo sed -i "1 s/puppetagent/puppetagent.local/1" /etc/hosts
+    # Add puppet to the hosts file
+      sudo echo "192.168.61.2 puppet.local puppet" >> /etc/hosts
+    ## Firewall rules 
+      sudo ufw allow ssh
+      sudo ufw allow 5000
+    ## Agent configuration
+      source /etc/profile.d/puppet-agent.sh
+      export PATH=/opt/puppetlabs/bin:$PATH
+    ## Timeout before cert signing and catalog pull
+      sleep 30
+    ## Request certificate signing and pull catalog 
+      sudo /opt/puppetlabs/puppet/bin/puppet agent -t --server=puppet
+    SHELL
+  end 
+end

@@ -1,0 +1,19 @@
+---
+
+name: extend_lv
+pack: disk
+runner_type: "local-shell-script"
+description: Extend logical volume
+enabled: true
+entry_point: extend_lv.sh
+parameters:
+    lv_path:
+        type: string
+        description: Path of the logical volume
+        required: true
+        position: 1
+    extend:
+        type: integer
+        description: Extend logical volume by given value.
+        required: true
+        position: 2

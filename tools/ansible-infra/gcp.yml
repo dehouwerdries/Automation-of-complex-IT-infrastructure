@@ -1,0 +1,9 @@
+plugin: google.cloud.gcp_compute
+zones: 
+  - europe-west1-b
+projects:
+  - the-lab-automation
+service_account_file: ./servicefile.json
+auth_kind: serviceaccount
+groups:
+  appserver: "'ansible' in name"

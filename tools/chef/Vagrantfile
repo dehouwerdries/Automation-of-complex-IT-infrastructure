@@ -1,0 +1,36 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+### Provider
+# Set vmware_desktop as the default provider for Vagrant
+ENV['VAGRANT_DEFAULT_PROVIDER'] = "vmware_desktop"
+# Uncomment the next line and comment the line above to use Virtualbox as the default provider
+# ENV['VAGRANT_DEFAULT_PROVIDER'] = "virtualbox"
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "generic/ubuntu2004"
+
+  # Check for box updates
+  config.vm.box_check_update = true
+
+  config.vm.define "chef-server" do |server|
+    ### Config
+    ## Hostname
+    server.vm.hostname = "chef"
+    ## Override default provider settings to increase memory
+    server.vm.provider "vmware_desktop" do |vmw|
+      vmw.memory = 4096
+    end
+    
+    ## Networking
+    server.vm.network "forwarded_port", guest: 5000, host: 80
+  
+    ## Provision using Chef
+    server.vm.provision "chef_zero" do |chef|
+      chef.cookbooks_path = "cookbooks"
+      chef.arguments = "--chef-license accept"
+      chef.nodes_path = ""
+      chef.run_list = [ "deployapp"]
+    end
+  end 
+end

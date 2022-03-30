@@ -1,0 +1,110 @@
+---
+- name: 'Create GCP infrastructure'
+  hosts: localhost
+  gather_facts: no
+  vars:
+    service_account_file: ./servicefile.json
+    service_mail: automation-ansible@the-lab-automation.iam.gserviceaccount.com
+    project: the-lab-automation
+    auth_kind: serviceaccount
+    zone: "europe-west1-b"
+    region: "europe-west1" 
+    machine_type: "n1-standard-1"
+    db_tier: "db-n1-standard-1"
+    scopes: 
+      - https://www.googleapis.com/auth/compute
+      - https://www.googleapis.com/auth/sqlservice.admin
+  tasks:
+    - name: 'Create a db'
+      google.cloud.gcp_sql_instance:
+        name: ansible-infra-db-2
+        database_version: "MYSQL_5_7"
+        settings: 
+          tier: "{{ db_tier }}"
+          ip_configuration:
+            authorized_networks:
+            - name: world_range
+              value: 0.0.0.0/32
+            ipv4_enabled: true
+        region: "{{ region }}"
+        project: "{{ project }}"
+        auth_kind: "{{ auth_kind }}"
+        service_account_file: "{{ service_account_file }}"
+        state: present
+      register: database
+
+
+    - name: 'Create a disk'
+      gcp_compute_disk:
+        name: 'disk-instance'
+        size_gb: 10
+        source_image: 'projects/ubuntu-os-cloud/global/images/family/ubuntu-2004-lts'
+        zone: "{{ zone }}"
+        project: "{{ project }}"
+        auth_kind: "{{ auth_kind }}"
+        service_account_file: "{{ service_account_file }}"
+        scopes:
+          - https://www.googleapis.com/auth/compute
+          - https://www.googleapis.com/auth/sqlservice.admin
+        state: present
+      register: disk
+
+    - name: 'Create an address'
+      google.cloud.gcp_compute_address:
+        name: ansible-node-address
+        region: "{{ region }}"
+        project: "{{ project }}"
+        auth_kind: "{{ auth_kind }}"
+        service_account_file: "{{ service_account_file }}"
+        state: present
+      register: address
+
+    - name: 'Create network'
+      gcp_compute_network:
+        name: ansible-network
+        auto_create_subnetworks: true
+        project: "{{ project }}"
+        auth_kind: "{{ auth_kind }}"
+        service_account_file: "{{ service_account_file }}"
+        state: present
+      register: network
+
+    - name: 'Create compute instance'
+      google.cloud.gcp_compute_instance:
+        name: ansible-infra-node
+        machine_type: n1-standard-1
+        disks:
+        - auto_delete: 'true'
+          boot: 'true'
+          source: "{{ disk }}"
+        network_interfaces:
+        - network: "{{ network }}"
+          access_configs:
+          - name: 'external-nat'
+            nat_ip: "{{ address }}"
+            type: 'ONE_TO_ONE_NAT'
+        zone: "{{ zone }}"
+        project: "{{ project }}"
+        auth_kind: "{{ auth_kind }}"
+        service_account_file: "{{ service_account_file }}"
+        state: present
+      register: instance
+
+    - name: 'Add tag to instance'
+      gce_tag:
+        instance_name: ansible-infra-node
+        tags: default-allow-ssh,default-allow-http
+        zone: "{{ zone }}"
+        project_id: "{{ project }}"
+        service_account_email: "{{ service_mail }}"
+        pem_file: "{{ service_account_file }}"
+        state: present
+      register: tag
+
+    - name: Show ce instance ip
+      debug:
+        msg: "The ce instance ip is {{ address.address }}"
+
+    - name: Show db instance ip
+      debug:
+        msg: "The db instance ip is {{ database.ipAddresses }}"

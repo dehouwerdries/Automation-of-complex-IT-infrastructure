@@ -1,0 +1,33 @@
+---
+- name: Update web servers
+  hosts: appserver
+  become: yes
+  remote_user: ansible
+  become_user: root
+
+  tasks:
+  - name: 'apt: update & upgrade'
+    apt:
+      update_cache: yes
+      upgrade: safe
+      state: latest  
+    register: updateUpgrade
+  - name: 'install docker'
+    apt:
+      name: docker.io
+      state: latest
+      update_cache: yes
+    register: installDocker
+  - name: 'pull code from gitlab using git & an acces token'
+    ansible.builtin.git:
+      repo: "https://access-token:glpat-CzRR-GWhMuzydztPPV47@gitlab.com/kdg-ti/the-lab/teams/goeie-vraag/dotnetapp.git"
+      dest: /var/code
+    register: pullCode
+  - name: 'Build the docker image'
+    command: docker build -t dotnetapp /var/code
+    register: buildOutput
+  #- debug: msg="{{buildOutput.stdout}}"
+  - name: 'Run dotnetapp image on host port 80'
+    command: docker run -d -p 80:5000 -e ASPNETCORE_ENVIRONMENT="Development" dotnetapp
+    register: runOutput
+  # - debug: msg="{{runOutput.stdout}}"

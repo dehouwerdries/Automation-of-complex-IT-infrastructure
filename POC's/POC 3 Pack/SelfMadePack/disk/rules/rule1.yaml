@@ -1,0 +1,13 @@
+---
+
+name: on_disk_event1
+pack: disk
+description: Rule firing on disk.event1 when logical volume is almost full.
+enabled: true
+trigger:
+    type: disk.event1
+action:
+    ref: disk.extend_lv
+    parameters:
+        lv_path: "{{ trigger.lv_path }}"
+        extend: "{{ trigger.extend }}"

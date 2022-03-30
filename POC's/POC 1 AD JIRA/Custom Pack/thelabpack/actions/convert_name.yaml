@@ -1,0 +1,11 @@
+---
+name: "convert_name"
+runner_type: "python-script"
+description: "Converts a name to a SAM name for AD."
+enabled: true
+entry_point: "convert_name.py"
+parameters:
+    name:
+        type: "string"
+        description: "The name you want to convret."
+        required: true
