@@ -25,3 +25,6 @@
 ## Usage
 
 If you'd like to deploy the POC's, see the final paper in "Sprint Deliverables" for documentation.
+
+## Note
+The Git Acces tokens are disabled.
