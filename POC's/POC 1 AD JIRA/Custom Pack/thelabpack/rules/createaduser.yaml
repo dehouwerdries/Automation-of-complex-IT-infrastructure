@@ -14,4 +14,4 @@
     action:                                # required
         ref: "thelabpack.workflow_createaduser"
         parameters:                        # optional
-            issuekey: "{{ trigger.issue_name }}
+            issuekey: "{{ trigger.issue_name }}"

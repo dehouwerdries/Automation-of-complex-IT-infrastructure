@@ -31,13 +31,13 @@ tasks:
         publish: ename=<% result().result.customfield_10028 %>
         do: getpass
   getpass:
-    action: passgen.generate_password length=10
+    action: thelabpack.generate_password length=10
     next:
       - when: <% succeeded() %>
         publish: genpass=<% result().result %>
         do: convertname
   convertname:
-    action: jira.convert_name name=<% ctx(ename) %>
+    action: thelabpack.convert_name name=<% ctx(ename) %>
     next:
        - when: <% succeeded() %>
          publish: converted_name=<% result().result %>

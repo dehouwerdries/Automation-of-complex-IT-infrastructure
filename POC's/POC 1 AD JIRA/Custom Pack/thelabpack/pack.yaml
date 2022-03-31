@@ -6,7 +6,7 @@ ref: thelabpack
 # the "ref" attribute must also be specified (see above).
 name: The Lab Custom Pack
 # User-friendly pack description.
-description: A simple pack created for integration with AD & JIRA containing a password generator and username converter.
+description: A simple pack created for integration with AD & JIRA & Duo.
 # Keywords which are used when searching for packs.
 keywords:
     - thelabpack

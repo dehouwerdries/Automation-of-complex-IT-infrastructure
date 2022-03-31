@@ -11,19 +11,17 @@ class DiskSensor(PollingSensor):
         self._logger = self.sensor_service.get_logger(name=self.__class__.__name__)
         self._stop = False
 
-        self._poll_interval = self._config.get('poll_interval', None)
-        self._mount_point = self._config.get('mount_point', None)
-        self._max_percentage = self._config.get('max_disk_percentage', None)
-        self._extend_amount = self._config.get('extend_amount', None)
-        self._logical_volume_path = self._config.get('logical_volume_path', None)
 
 
     def setup(self):
         
-        mount_point = self._config.get('mount_point', None)    
-        max_percentage = self._config.get('max_disk_percentage', None)
-        extend_amount = self._config.get('extend_amount', None)    
-        logical_volume_path = self._config.get('logical_volume_path', None)    
+        self._poll_interval = self._config.get('poll_interval', None)
+        self._mount_point = self._config.get('mount_point', None)
+        self._max_percentage = self._config.get('max_disk_percentage', None)
+        self._extend_amount = self._config.get('extend_amount', None)
+        self._logical_volume_path = self._config.get('logical_volume_path', None)   
+
+
 
     def poll(self):
         disk_u = dict(psutil.disk_usage(self._mount_point)._asdict())
