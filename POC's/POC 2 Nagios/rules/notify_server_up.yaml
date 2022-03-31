@@ -1,0 +1,38 @@
+{
+  "tags": [],
+  "uid": "rule:twitter:notify_server_up",
+  "metadata_file": "",
+  "name": "notify_server_up",
+  "ref": "twitter.notify_server_up",
+  "description": "Tweets when the server goes back up",
+  "pack": "twitter",
+  "type": {
+    "ref": "standard",
+    "parameters": {}
+  },
+  "trigger": {
+    "type": "nagios.service_state_change",
+    "parameters": {},
+    "ref": "nagios.service_state_change",
+    "description": "Trigger type for nagios service state change event."
+  },
+  "criteria": {
+    "trigger.state": {
+      "type": "eq",
+      "pattern": "UP"
+    }
+  },
+  "action": {
+    "ref": "twitter.update_status",
+    "parameters": {
+      "log_level": "DEBUG",
+      "status": "The server has gone back up"
+    },
+    "description": "Update your status (post a new tweet)."
+  },
+  "context": {
+    "user": "st2admin"
+  },
+  "enabled": true,
+  "id": "622885e3049b68969acd394f"
+}

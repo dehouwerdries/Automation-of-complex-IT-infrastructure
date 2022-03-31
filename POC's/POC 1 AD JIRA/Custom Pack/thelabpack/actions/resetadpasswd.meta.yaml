@@ -1,0 +1,13 @@
+pack: thelabpack
+enabled: true
+runner_type: orquesta
+name: resetadpasswd
+entry_point: workflows/resetadpasswd.yaml
+description: Resets a AD user password
+parameters:
+  issueid:
+    type: string
+    description: Issue key to run this on
+    required: true
+    immutable: false
+    default: null

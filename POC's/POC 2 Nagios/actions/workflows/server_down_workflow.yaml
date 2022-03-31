@@ -1,0 +1,24 @@
+version: 1.0
+tasks:
+  # [296, 75]
+  task1:
+    action: twitter.update_status
+    input:
+      log_level: DEBUG
+      status: We have detected that one of our servers has gone down. We are trying to get it back up as soon as possible
+    next:
+      - do:
+          - task2
+        when: <% succeeded() %>
+  # [296, 210]
+  task2:
+    action: mailgun.send_email
+    input:
+      log_level: DEBUG
+      recipient: goeievraag22@gmail.com
+      sender: stackstorm@thelab.com
+      subject: "server has gone down :("
+      content_version: null
+      text: quick quick !!! the  <%ctx(host)%> server has gone down
+input:
+  - host

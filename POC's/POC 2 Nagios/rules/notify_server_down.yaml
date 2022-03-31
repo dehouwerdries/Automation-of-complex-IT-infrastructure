@@ -1,0 +1,36 @@
+{
+  "tags": [],
+  "uid": "rule:twitter:notify_server_down",
+  "metadata_file": "",
+  "name": "notify_server_down",
+  "ref": "twitter.notify_server_down",
+  "pack": "twitter",
+  "type": {
+    "ref": "standard",
+    "parameters": {}
+  },
+  "trigger": {
+    "type": "nagios.service_state_change",
+    "parameters": {},
+    "ref": "nagios.service_state_change",
+    "description": "Trigger type for nagios service state change event."
+  },
+  "criteria": {
+    "trigger.state": {
+      "type": "eq",
+      "pattern": "DOWN"
+    }
+  },
+  "action": {
+    "ref": "default.server_down_workflow",
+    "parameters": {
+      "host": "{{ trigger.host }}"
+    },
+    "description": null
+  },
+  "context": {
+    "user": "st2admin"
+  },
+  "enabled": true,
+  "id": "623493d9ede63a0e7bc92550"
+}

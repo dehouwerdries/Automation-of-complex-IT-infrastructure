@@ -1,0 +1,35 @@
+{
+  "tags": [],
+  "uid": "action:default:server_down_workflow",
+  "metadata_file": "actions/server_down_workflow.meta.yaml",
+  "name": "server_down_workflow",
+  "ref": "default.server_down_workflow",
+  "enabled": true,
+  "entry_point": "workflows/server_down_workflow.yaml",
+  "pack": "default",
+  "runner_type": "orquesta",
+  "parameters": {
+    "host": {
+      "type": "string",
+      "immutable": false,
+      "default": "trigger.host",
+      "required": false,
+      "_name": "host"
+    },
+    "notify": {
+      "type": "array",
+      "uniqueItems": true,
+      "default": [],
+      "description": "List of tasks to trigger notifications for.",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "pattern": "^\\w+$"
+      },
+      "_name": "notify"
+    }
+  },
+  "output_schema": {},
+  "notify": {},
+  "id": "62348fe4ede63a0e7bc9254f"
+}

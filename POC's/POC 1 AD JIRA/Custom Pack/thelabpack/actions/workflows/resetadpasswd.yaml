@@ -1,0 +1,126 @@
+version: 1.0
+tasks:
+  # [15, 51]
+  set_processing:
+    action: jira.transition_issue_by_name
+    input:
+      log_level: DEBUG
+      issue: <% ctx(issueid) %>
+      transition_name: Being Processed
+    next:
+      # #5b5dd0
+      - do:
+          - get_info_from_issue
+        when: <% succeeded() %>
+  # [14, 176]
+  get_info_from_issue:
+    action: jira.get_issue
+    input:
+      log_level: DEBUG
+      include_customfields: true
+      issue_key: <% ctx(issueid) %>
+    next:
+      # #629e47
+      - do:
+          - auth_duo
+        when: <% succeeded() %>
+        publish:
+          - aduser: <% result().result.customfield_10031 %>
+          - requester: <% result().result.reporter %>
+      # #629e47
+      - do:
+          - comment_awaiting_auth
+        when: <% succeeded() %>
+  # [15, 310]
+  auth_duo:
+    action: duo.auth_auth
+    next:
+      # #d1583b
+      - do:
+          - comment_failed_auth
+        when: <% failed() %>
+      # #d1583b
+      - do:
+          - set_task_failed
+        when: <% failed() %>
+      # #629e47
+      - do:
+          - generate_new_pass
+        when: <% succeeded() %>
+    input:
+      factor: auto
+      log_level: DEBUG
+      username: <% ctx(requester) %>
+  # [277, 407]
+  comment_failed_auth:
+    action: jira.comment_issue
+    input:
+      log_level: DEBUG
+      comment_text: Authentication failed.
+      issue_key: <% ctx(issueid) %>
+  # [279, 274]
+  set_task_failed:
+    action: jira.transition_issue_by_name
+    input:
+      log_level: DEBUG
+      transition_name: Failed
+      issue: <% ctx(issueid) %>
+  # [282, 173]
+  comment_awaiting_auth:
+    action: jira.comment_issue
+    input:
+      log_level: DEBUG
+      comment_text: Awaiting authentication.
+      issue_key: <% ctx(issueid) %>
+  # [15, 445]
+  generate_new_pass:
+    action: thelabpack.generate_password
+    input:
+      log_level: DEBUG
+      length: 10
+    next:
+      # #629e47
+      - do:
+          - reset_passwd
+        publish:
+          - new_pass: <% result().result %>
+        when: <% succeeded() %>
+  # [289, 545]
+  reset_passwd:
+    action: activedirectory.set_ad_account_password
+    input:
+      log_level: DEBUG
+      hostname: test-ad-instance.europe-west1-b.c.the-lab-automation.internal
+      credential_name: prod
+      args: "-Identity <% ctx(aduser) %> -NewPassword (ConvertTo-SecureString \"<% ctx(new_pass) %>\" -AsPlainText -Force) -Reset"
+      timeout: null
+      cmdlet_password: null
+    next:
+      # #629e47
+      - do:
+          - comment_new_pass
+        when: <% succeeded() %>
+      # #629e47
+      - do:
+          - set_task_done
+        when: <% succeeded() %>
+  # [566, 466]
+  comment_new_pass:
+    action: jira.comment_issue
+    input:
+      log_level: DEBUG
+      comment_text: <% ctx(new_pass) %>
+      issue_key: <% ctx(issueid) %>
+  # [579, 549]
+  set_task_done:
+    action: jira.transition_issue_by_name
+    input:
+      log_level: DEBUG
+      issue: <% ctx(issueid) %>
+      transition_name: Done
+input:
+  - issueid
+vars:
+  - aduser: null
+  - requester: null
+  - new_pass: null
